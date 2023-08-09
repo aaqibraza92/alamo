@@ -27,6 +27,12 @@ input {
   -o-border-radius: 20px;
   border-radius: 20px;
 }
+.radius10 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
 .pointer {
   cursor: pointer;
 }
@@ -36,7 +42,22 @@ textarea::placeholder {
   color: #929398;
   opacity: 1;
 }
-
+.btnBorder.btnTheme {
+  background: transparent !important;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btnBorder.btnTheme:hover {
+  background: var(--colorGreen) !important; 
+  color: #fff;
+  border-color: var(--colorGreen);
+}
+.btnTheme.borderGreen{
+  border: 1px solid var(--colorGreen) !important;
+}
+.btnTheme.borderGreen:hover{
+  border: 1px solid var(--colorGreen) !important;
+}
 
 .textarea {
   height: 120px;
@@ -263,4 +284,13 @@ animation-direction: normal;
   }
   .fontItalic {
     font-style: italic;
+  }
+  .bgImage {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .serList > p {
+    position: relative;
+    top: -30px;
   }

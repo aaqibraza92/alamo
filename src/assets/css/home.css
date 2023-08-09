@@ -95,3 +95,39 @@ width: 50px;
   height: 30px;
 width: 50px;
 }
+
+.shadowContent {
+  box-shadow: 5px 5px 5px 4px rgba(0,0,0,0.15);
+}
+@media only screen and (min-width:768px) {
+  .shadowContent {
+    position: relative;
+    left: -100px;
+  }
+}
+.iconWrapper {
+  border: 8px solid var(--colorBlue);
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 100%;
+  position: relative;
+  top: -70px;
+  background: #fff;
+}
+.serList {
+  min-height: 350px;
+}
+.serList:hover {
+  background: var(--colorGreen);
+}
+body .bgWhite {
+  background: #fff;
+}
+.serList:hover .iconWrapper {
+  border-color: var(--colorGreen);
+}
+.iconWrapper img {
+  width: 70px;
+}

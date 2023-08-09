@@ -8,6 +8,8 @@ import Testomonial from './Testomonial'
 import Counter from './Counter'
 import { Helmet } from "react-helmet";
 import ImageContent from './ImageContent'
+import CallToAction from './CallToAction'
+import CallToActionFirst from './CallToActionFirst'
 
 const HomePage = () => {
   return (
@@ -17,12 +19,15 @@ const HomePage = () => {
       </Helmet>
     <main>
     <HomeBanner/>
+   
     <ImageContent/>
+    <CallToActionFirst/>
+    <CallToAction/>
+    {/* <PractiseAreas/> */}
+    {/* <WhyChosseUs/> */}
+    {/* <Testomonial/> */}
+    {/* <Counter/> */}
     <WhatWeDo/>
-    <PractiseAreas/>
-    <WhyChosseUs/>
-    <Testomonial/>
-    <Counter/>
     </main>
     </>
 

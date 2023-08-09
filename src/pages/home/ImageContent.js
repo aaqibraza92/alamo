@@ -12,7 +12,7 @@ const ImageContent = () => {
   }
  
   return (
-<div className="bgWhite pt60">
+<div className="bgWhite pt100">
         <Container>
           <Row className="align-items-center">
             <Col lg={7} md={7}>
