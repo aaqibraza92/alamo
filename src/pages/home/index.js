@@ -1,15 +1,13 @@
 import React from 'react'
 import HomeBanner from './HomeBanner'
-import PractiseAreas from './PractiseAreas'
 import '../../assets/css/home.css'
 import WhatWeDo from './WhatWeDo'
-import WhyChosseUs from './WhyChosseUs'
-import Testomonial from './Testomonial'
-import Counter from './Counter'
 import { Helmet } from "react-helmet";
 import ImageContent from './ImageContent'
 import CallToAction from './CallToAction'
 import CallToActionFirst from './CallToActionFirst'
+import OurTeam from './OurTeam'
+import OurServices from './OurServices'
 
 const HomePage = () => {
   return (
@@ -22,6 +20,8 @@ const HomePage = () => {
    
     <ImageContent/>
     <CallToActionFirst/>
+    <OurServices/>
+    <OurTeam/>
     <CallToAction/>
     {/* <PractiseAreas/> */}
     {/* <WhyChosseUs/> */}
