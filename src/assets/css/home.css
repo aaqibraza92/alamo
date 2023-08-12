@@ -122,6 +122,9 @@ width: 50px;
 .serList:hover {
   background: var(--colorGreen);
 }
+.serList:hover p {
+color: #fff;
+}
 body .bgWhite {
   background: #fff;
 }

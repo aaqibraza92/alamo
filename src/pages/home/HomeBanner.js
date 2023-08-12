@@ -19,7 +19,7 @@ const HomeBanner = () => {
         alt="banner"
       />
       <div className="caption position-absolute w-100">
-        <Container>
+      <div className="container-xl">
           <Row>
             <Col lg={5} md={8}>
               <div>
@@ -36,7 +36,7 @@ Healthier You
                 <div className="d-flex">
                   <Link
                     className="btnTheme bgGreen mr12 fMedium btnMob"
-                    to="/contact-us"
+                    to="#"
                     onClick={()=>contactTypeHandle("talent")}
                   >
                     Contact Us
@@ -45,7 +45,7 @@ Healthier You
               </div>
             </Col>
           </Row>
-        </Container>
+        </div>
       </div>
     </div>
   );

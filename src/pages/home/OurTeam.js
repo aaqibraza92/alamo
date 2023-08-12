@@ -2,16 +2,67 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import bgImage from "../../assets/img/team.png";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 
-const OurTeam = (props) => {
+const OurTeam = () => {
+  var SliderSettings = {
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: "",
+    nextArrow: "",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          adaptiveHeight: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 10,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className={` position-relative ${props.className==="servicePage" ? "pb30" : "pb100"}`}>
+    <div className="position-relative pb100 mobPb50">
       <section
-        className="text-center bgImage pt100 pb0 "
+        className="text-center bgImage pt100 pb0 mobPt50 "
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <Container>
-          <Row className="justify-content-center">
+        <div className="container-xl">
+          <Row className="justify-content-center ">
             <Col lg={8}>
               <h2 className="colorWhite fs50 fw600 mb20">Meet Our Team</h2>
               <p className="colorWhite fs20 fw600 mb30">
@@ -39,11 +90,11 @@ const OurTeam = (props) => {
             </Col>
           </Row>
          
-        </Container>
+        </div>
         <div className="grd teamLists mt30">
-        <Container>
-        <Row className="justify-content-center">
-            <Col lg={4} md={4}>
+        <div className="container-xl">
+        <Slider className="parentSl" {...SliderSettings}>
+              <div className="pl10 pr10 pb25">
               <div className="radius10 bgWhite pl30 pr30 pt30 pb30 shadow ">
                 <div className="mb20">
                   <img
@@ -73,8 +124,9 @@ const OurTeam = (props) => {
                   </Link>
                 </div>
               </div>
-            </Col>
-            <Col lg={4} md={4}>
+              </div>
+
+              <div className="pl10 pr10 pb25">
               <div className="radius10 bgWhite pl30 pr30 pt30 pb30 shadow teamLists">
                 <div className="mb20">
                   <img
@@ -104,9 +156,10 @@ const OurTeam = (props) => {
                   </Link>
                 </div>
               </div>
-            </Col>
-            <Col lg={4} md={4}>
-              <div className="radius10 bgWhite pl30 pr30 pt30 pb30 shadow teamLists">
+                </div>
+
+                <div className="pl10 pr10 pb25">
+                <div className="radius10 bgWhite pl30 pr30 pt30 pb30 shadow teamLists">
                 <div className="mb20">
                   <img
                     src={require("../../assets/img/t3.png")}
@@ -135,9 +188,12 @@ const OurTeam = (props) => {
                   </Link>
                 </div>
               </div>
-            </Col>
-          </Row>
-        </Container>
+</div>
+
+          </Slider>
+
+        
+        </div>
       </div>
       </section>
     

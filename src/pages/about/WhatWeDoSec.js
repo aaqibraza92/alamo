@@ -9,14 +9,14 @@ let data = [
   "Permanent/Full-Time",
   "Functional services (FSP)",
 ];
-const WhatWeDo = () => {
+const WhatWeDoSec = () => {
   return (
-    <section className="pt80 pb80 whatWeDo">
-      <div className="container-xl">
-        <Row className="align-items-center gy-3">
+    <section className="pt80 pb80">
+      <Container>
+        <Row className="align-items-center mobilereverse">
           <Col lg={7}>
             <img
-              src={require("../../assets/img/tailored.png")}
+              src={require("../../assets/img/about/abt_last.png")}
               className="img-fluid radius19"
               alt="what we do"
             />
@@ -24,21 +24,19 @@ const WhatWeDo = () => {
           <Col lg={5} className="intro-content">
             <div className="bgWhite shadowContent radius10 pl60 pr60 pt60 pb60">
               <h2 className="colorGreen fw600 fs45 mobFs28 fBold mb30">
-                <div className="colorBlue">Exceptional Care</div>
-                Tailored to Your Needs
+                <div className="colorBlue">A Team That 
+</div>
+Truly Cares
               </h2>
               <p className="fs18 fw400 colorBlue">
-                Welcome to Alamo Primary Care, your trusted provider of
-                comprehensive primary healthcare services in the heart of Alamo
-                City. We are dedicated to delivering personalized, compassionate
-                care that focuses on your overall well-being.
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
               </p>
             </div>
           </Col>
         </Row>
-      </div>
+      </Container>
     </section>
   );
 };
 
-export default WhatWeDo;
+export default WhatWeDoSec;

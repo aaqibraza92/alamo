@@ -6,10 +6,10 @@ import bgImage from  '../../assets/img/bgImg.png';
 
 const CallToAction = () => {
   return (
-    <section className="text-center bgImage pt100 pb100"   style={{ backgroundImage: `url(${bgImage})` }} >
+    <section className="text-center bgImage pt100 pb100 mobPt50 mobPb50"   style={{ backgroundImage: `url(${bgImage})` }} >
        <div className="container-xl">
       <div className="pt30 pb30">
-      <h2 className="colorWhite fs50 fw600 mb60">
+      <h2 className="colorWhite fs50 fw600 mb60 mobMb30">
           We Treat All Patients From Age 16.
         </h2>
         <div className="d-flex justify-content-center align-items-center flex-wrap">
