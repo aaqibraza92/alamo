@@ -257,3 +257,18 @@ a {
   background-repeat: no-repeat !important;
 
 }
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoWrapper button {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

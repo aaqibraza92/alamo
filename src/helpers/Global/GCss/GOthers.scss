@@ -47,10 +47,11 @@ textarea::placeholder {
   color: #fff;
   border: 1px solid #fff;
 }
+
 .btnBorder.btnTheme:hover {
-  background: var(--colorGreen) !important; 
+  background: var(--colorBlue) !important; 
   color: #fff;
-  border-color: var(--colorGreen);
+  border-color: var(--colorBlue);
 }
 .btnTheme.borderGreen{
   border: 1px solid var(--colorGreen) !important;

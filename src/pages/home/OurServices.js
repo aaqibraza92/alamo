@@ -4,7 +4,7 @@ import { Col, Container, Row } from "reactstrap";
 const OurServices = () => {
   return (
     <section className="servicearea pt100 pb100 text-center bgLightBlue">
-      <Container>
+      <div className="container-xl">
         <Row className="justify-content-center">
           <Col lg={6}>
             <h2 className="colorBlue fs50 fw600 mb20">
@@ -44,7 +44,7 @@ const OurServices = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </section>
   );
 };
