@@ -7,7 +7,7 @@ import bgImage from  '../../assets/img/bgImg.png';
 const CallToAction = () => {
   return (
     <section className="text-center bgImage pt100 pb100"   style={{ backgroundImage: `url(${bgImage})` }} >
-      <Container>
+       <div className="container-xl">
       <div className="pt30 pb30">
       <h2 className="colorWhite fs50 fw600 mb60">
           We Treat All Patients From Age 16.
@@ -22,7 +22,7 @@ const CallToAction = () => {
         </div>
       </div>
      
-      </Container>
+      </div>
     </section>
   );
 };

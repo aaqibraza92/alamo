@@ -1,15 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { angleRight } from "../../assets/svg/Svg";
+import { Container } from "reactstrap";
 
 const BreadCrumb = (props) => {
+  console.log(props?.bgImage);
   return (
-    <section className="breadCrumb text-center bgcover d-flex align-items-center justify-content-center pt70 pb70">
+    <section style={{background: `url(${props?.bgImage})`}} className="breadCrumb bgcover d-flex align-items-center justify-content-start pt90 pb90">
+      <Container>
       <div className="contentArea">
-        <h2 className="colorBlue fs36 mobFs22 fBold">{props?.title}</h2>
-        {props.subTitle && (
+      {props.subTitle && (
           <p className="mt15 colorGreen fs20">{props.subTitle}</p>
         )}
+        <h2 className="colorBlue fs45 mobFs22 fw600 fBold">{props?.title}</h2>
+        <ul className="noUl d-flex">
+          <li className="colorBlue">
+            Home
+          </li>
+          <li className="colorGreen"> 
+            {window.location.pathname}
+          </li>
+        </ul>
+    
 
         {/* {props?.items && (
           <ul className="noUl d-flex justify-content-center">
@@ -28,6 +40,9 @@ const BreadCrumb = (props) => {
           </ul>
         )} */}
       </div>
+
+      </Container>
+
     </section>
   );
 };

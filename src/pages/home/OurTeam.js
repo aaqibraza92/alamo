@@ -3,9 +3,9 @@ import { Col, Container, Row } from "reactstrap";
 import bgImage from "../../assets/img/team.png";
 import { Link } from "react-router-dom";
 
-const OurTeam = () => {
+const OurTeam = (props) => {
   return (
-    <div className="position-relative pb100">
+    <div className={` position-relative ${props.className==="servicePage" ? "pb30" : "pb100"}`}>
       <section
         className="text-center bgImage pt100 pb0 "
         style={{ backgroundImage: `url(${bgImage})` }}

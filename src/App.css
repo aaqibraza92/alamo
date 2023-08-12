@@ -6,7 +6,7 @@
     font-family: 'Barlow', sans-serif;
   }
 .breadCrumb{
-  background: url('./assets/img/hero_img.jpg');
+
 }
 .single_bg{
   background: url('./assets/img/single_bg.jpg');
@@ -251,4 +251,9 @@ a {
 }
 .bDivi{
   border-bottom: 1px solid #323d4c;
+}
+.bgcover {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
 }

@@ -28,6 +28,7 @@ import UniconPharmaCareers from "../../pages/unicon-pharma-careers";
 import BlogSingle from "../../pages/blogs/BlogSingle";
 import BlogCategory from "../../pages/Category";
 import PrivacyPolicy from "../../pages/privacyPolicy";
+import Service from "../../pages/services";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -161,6 +162,11 @@ let RouterList = [
   {
     element: <GetRoute isprivate={false} role="Default" page={PrivacyPolicy} />,
     path: "/privacy-policy",
+    isAdmin: false,
+  },
+  {
+    element: <GetRoute isprivate={false} role="Default" page={Service} />,
+    path: "/services",
     isAdmin: false,
   },
 
