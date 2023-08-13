@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import ImageContent from "../home/ImageContent";
 import CallToAction from "../../components/CallToAction";
 import WhatWeDoSec from "./WhatWeDoSec";
+import OurClientCarousel from "./OurClientCarousel";
 const AboutUs = () => {
   const videoRef = useRef(null);
   const [playStatus, setplayStatus] = useState(false);
@@ -106,6 +107,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <OurClientCarousel/>
       <WhatWeDoSec/>
       {/* <section className="pt80 pb80">
         <Container>
