@@ -10,6 +10,19 @@ const BreadCrumb = (props) => {
       <Container>
       <div className="contentArea">
       {props.subTitle && (
+<<<<<<< HEAD
+          <p className="mt15 colorGreen fs18">{props.subTitle}</p>
+        )}
+        <h2 className="colorBlue fs60 mobFs22 fw600">{props?.title}</h2>
+        {/* <ul className="noUl d-flex">
+          <li className="colorBlue">
+            Home
+          </li>
+          <li className="colorGreen text-capitalize fw500"> 
+            {window.location.pathname}
+          </li>
+        </ul> */}
+=======
           <p className="mt15 colorGreen fs20">{props.subTitle}</p>
         )}
         <h2 className="colorBlue fs45 mobFs22 fw600 fBold">{props?.title}</h2>
@@ -21,6 +34,7 @@ const BreadCrumb = (props) => {
             {window.location.pathname}
           </li>
         </ul>
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
     
 
         {/* {props?.items && (

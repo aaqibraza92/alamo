@@ -26,11 +26,11 @@ const HomeBanner = () => {
                 <p className="fs20 colorGreen fw600 tabfs15 mobFs15 mb10">
                 Welcome to Alamo Primary Care
                 </p>
-                <h1 className="fs50 fw600 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorBlue ml0">
+                <h1 className="fs50 fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorBlue ml0">
                 Comprehensive 
-Primary Care 
-Services for a 
-Healthier You
+                Primary Care 
+                Services for a 
+                Healthier You
                 </h1>
 
                 <div className="d-flex">

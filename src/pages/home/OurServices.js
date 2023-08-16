@@ -117,13 +117,18 @@ const OurServices = () => {
             </p>
             <p className="colorBlue fs15 fw400 mb20">
               At Alamo Primary Care, we offer a wide range of primary care
-              services to address all aspects of your health. Our services
-              include:
+              services to address all aspects of your health. 
             </p>
           </Col>
         </Row>
 
         <Slider className="parentSl mb20 mobMb30" {...SliderSettings}>
+<<<<<<< HEAD
+
+           
+
+=======
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
           <div className="pl10 pr10">
           <div className="radius10 position-relative mainSerWrap transition">
               <img
@@ -131,26 +136,42 @@ const OurServices = () => {
                 className="w-100 radius10"
                 alt=""
               />
+<<<<<<< HEAD
+              <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 pb30 transition">
+=======
               <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 transition">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                 <div className="h-100 d-flex align-items-end">
                   <div className="text-start pb20">
                     <div className="mb20">
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600">
-                      Routine check-ups and preventive care
+                      Routine check-ups<br></br> and preventive care
                     </h4>
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
+
+             
+
+              <div className="w-100 onHover radius10 blueGrd posUp img-hvr hvr-6 position-absolute h-100 d-flex flex-column pl30 pr30 transition">
+                <div className="h-100 d-flex align-items-center  transition">
+=======
               <div className="w-100 onHover radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 transition">
                 <div className="h-100 d-flex align-items-center">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                   <div className="text-start">
                     <div className="mb20">
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600 mb20">
+<<<<<<< HEAD
+                    Routine check-ups<br></br> and preventive care
+=======
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                     <p className="colorWhite fs15 fw400 mb20">
                       At Alamo Primary Care, we offer a wide range of primary care
@@ -174,18 +195,30 @@ const OurServices = () => {
           <div className="pl10 pr10">
           <div className="radius10 position-relative mainSerWrap transition">
               <img
+<<<<<<< HEAD
+                src={require("../../assets/img/Quality.jpg")}
+                className="w-100 radius10"
+                alt=""
+              />
+              <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pb30 pr30 transition">
+=======
                 src={require("../../assets/img/si11.jpg")}
                 className="w-100 radius10"
                 alt=""
               />
               <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 transition">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                 <div className="h-100 d-flex align-items-end">
                   <div className="text-start pb20">
                     <div className="mb20">
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600">
+<<<<<<< HEAD
+                    Immunizations and<br></br>  vaccinations
+=======
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                   </div>
                 </div>
@@ -197,7 +230,11 @@ const OurServices = () => {
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600 mb20">
+<<<<<<< HEAD
+                    Immunizations and <br></br>  vaccinations
+=======
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                     <p className="colorWhite fs15 fw400 mb20">
                       At Alamo Primary Care, we offer a wide range of primary care
@@ -221,6 +258,20 @@ const OurServices = () => {
 <div className="pl10 pr10">
 <div className="radius10 position-relative mainSerWrap transition">
               <img
+<<<<<<< HEAD
+                src={require("../../assets/img/Chronicdiseasemanagement.jpg")}
+                className="w-100 radius10"
+                alt=""
+              />
+              <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pb30 pr30 transition">
+                <div className="h-100 d-flex align-items-end">
+                  <div className="text-start pb20">
+                    <div className="mb20">
+                      <img src={require("../../assets/img/homeservicesthree.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600">
+                    Chronic disease <br></br> management
+=======
                 src={require("../../assets/img/si11.jpg")}
                 className="w-100 radius10"
                 alt=""
@@ -233,6 +284,7 @@ const OurServices = () => {
                     </div>
                     <h4 className="colorWhite fs24 fw600">
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                   </div>
                 </div>
@@ -241,10 +293,17 @@ const OurServices = () => {
                 <div className="h-100 d-flex align-items-center">
                   <div className="text-start">
                     <div className="mb20">
+<<<<<<< HEAD
+                      <img src={require("../../assets/img/homeservicesthree.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600 mb20">
+                    Chronic disease <br></br> management
+=======
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600 mb20">
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                     <p className="colorWhite fs15 fw400 mb20">
                       At Alamo Primary Care, we offer a wide range of primary care
@@ -264,9 +323,17 @@ const OurServices = () => {
               </div>
             </div>
 </div>
+<<<<<<< HEAD
+
+
+        </Slider>
+ 
+        <Slider className="parentSl newslide" {...SliderSettings2}>
+=======
         </Slider>
  
         <Slider className="parentSl" {...SliderSettings2}>
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
         <div className="pl10 pr10">
         <div className="radius10 position-relative mainSerWrap transition">
               <img
@@ -274,6 +341,16 @@ const OurServices = () => {
                 className="w-100 radius10"
                 alt=""
               />
+<<<<<<< HEAD
+              <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pb30 pr30 transition">
+                <div className="h-100 d-flex align-items-end">
+                  <div className="text-start pb20">
+                    <div className="mb20">
+                      <img src={require("../../assets/img/Womenshealthservices.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600">
+                    Women's health services
+=======
               <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 transition">
                 <div className="h-100 d-flex align-items-end">
                   <div className="text-start pb20">
@@ -282,6 +359,7 @@ const OurServices = () => {
                     </div>
                     <h4 className="colorWhite fs24 fw600">
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                   </div>
                 </div>
@@ -290,10 +368,17 @@ const OurServices = () => {
                 <div className="h-100 d-flex align-items-center">
                   <div className="text-start">
                     <div className="mb20">
+<<<<<<< HEAD
+                      <img src={require("../../assets/img/Womenshealthservices.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600 mb20">
+                    Women's health services
+=======
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600 mb20">
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                     <p className="colorWhite fs15 fw400 mb20">
                       At Alamo Primary Care, we offer a wide range of primary care
@@ -321,6 +406,16 @@ const OurServices = () => {
                 className="w-100 radius10"
                 alt=""
               />
+<<<<<<< HEAD
+              <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pb30 pr30 transition">
+                <div className="h-100 d-flex align-items-end">
+                  <div className="text-start pb20">
+                    <div className="mb20">
+                      <img src={require("../../assets/img/Geriatriccare.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600">
+                    Geriatric care
+=======
               <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 transition">
                 <div className="h-100 d-flex align-items-end">
                   <div className="text-start pb20">
@@ -329,6 +424,7 @@ const OurServices = () => {
                     </div>
                     <h4 className="colorWhite fs24 fw600">
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                   </div>
                 </div>
@@ -337,10 +433,17 @@ const OurServices = () => {
                 <div className="h-100 d-flex align-items-center">
                   <div className="text-start">
                     <div className="mb20">
+<<<<<<< HEAD
+                      <img src={require("../../assets/img/Geriatriccare.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600 mb20">
+                    Geriatric care
+=======
                       <img src={require("../../assets/img/si1.png")} alt="" />
                     </div>
                     <h4 className="colorWhite fs24 fw600 mb20">
                       Routine check-ups and preventive care
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                     </h4>
                     <p className="colorWhite fs15 fw400 mb20">
                       At Alamo Primary Care, we offer a wide range of primary care

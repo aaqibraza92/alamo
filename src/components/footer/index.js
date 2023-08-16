@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <div className="text-center">
+        {/* <div className="text-center">
           <Row className="justify-content-center bDivi mb60 pb30">
             <Col lg={8}>
             <h2 className="colorWhite fs50 fw600 mb20">
@@ -37,7 +37,7 @@ const Footer = () => {
 
          
        
-        </div>
+        </div> */}
         <Row className="gy-5">
           <Col lg={3} md={3} xl={3}>
             <h3 className="colorWhite fs30 fw500  mb40 text-uppercase">
@@ -62,10 +62,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{callSvg}</span>
                   <a
-                    href="tel:848-666-0101"
+                    href="tel:210-571-1338"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-                    848-666-0101
+                    210-571-1338
                   </a>
                 </div>
               </li>
@@ -73,10 +73,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{globleSvg}</span>
                   <Link
-                    to="/"
+                    to="https://alamoprimarycare.com/"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-                 www.alamo.com
+                 www.alamoprimarycare.com
                   </Link>
                 </div>
               </li>
@@ -84,10 +84,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{envelopSvg}</span>
                   <a
-                    href="mailto:potranco.clinic@alamoprimarycare.com"
+                    href="mailto:admin@alamoprimarycare.com"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-                 potranco.clinic@alamoprimarycare.com
+                 admin@alamoprimarycare.com
                   </a>
                 </div>
               </li>
@@ -100,8 +100,7 @@ const Footer = () => {
                     href="tel:848-666-0101"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-              12047 FM 1957, San Antonio, <br/>
- TX - 78253
+              12047 Potranco Rd ste 150, San Antonio, TX 78253, United States
                   </a>
                 </div>
               </li>
@@ -115,7 +114,7 @@ const Footer = () => {
             <ul className="noUl">
               <li className="mb8">
                 <Link
-                  to="/about-us"
+                  to="/"
                   className="colorWhite fs15 fRegular itemLightwhite"
                 >
                 Home
@@ -123,7 +122,7 @@ const Footer = () => {
               </li>
               <li className="mb8">
                 <Link
-                  to="/preclinical-scientific"
+                  to="/about-us"
                   className="colorWhite fs15 fRegular itemLightwhite"
                 >
                About Us
@@ -131,7 +130,7 @@ const Footer = () => {
               </li>
               <li className="mb8">
                 <Link
-                  to="/our-team"
+                  to="/services"
                   className="colorWhite fs15 fRegular itemLightwhite"
                 >
                Services
@@ -139,20 +138,13 @@ const Footer = () => {
               </li>
               <li className="mb8">
                 <Link
-                  to="/blogs"
+                  to="/#"
                   className="colorWhite fs15 fRegular itemLightwhite"
                 >
-              Meet Our Team
+               Blog
                 </Link>
               </li>
-              <li className="mb8">
-                <Link
-                  to="/contact-us"
-                  className="colorWhite fs15 fRegular itemLightwhite"
-                >
-               Patient Resources
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   to="/contact-us"
@@ -166,7 +158,7 @@ const Footer = () => {
 
           <Col lg={3} md={3} xl={3}>
             <h3 className="colorWhite fs30 fw500 mb40 text-uppercase">
-              Newsletter
+             Locate us
             </h3>
             <p className="fs15 colorWhite fw400">
               Our newsletters contain useblog posts, case studies "how to"s and

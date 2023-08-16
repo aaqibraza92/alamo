@@ -24,3 +24,50 @@
 }
 /*spacing*/
 
+@media only screen and (max-width: 767px) {
+      .pl30 {
+        padding-left: 15px;
+      }
+      .pt100 {
+        padding-top: 50px;
+      }
+      .pb100 {
+        padding-bottom: 50px;
+      }
+      .pr30 {
+        padding-right: 15px;
+      }
+      .mb60 {
+        margin-bottom: 15px;
+      }
+      .pr60 {
+        padding-right: 30px;
+      }
+      .pl60 {
+        padding-left: 30px;
+      }
+      .pb60 {
+        padding-bottom: 30px;
+      }
+      .pt60 {
+        padding-top: 30px;
+      }
+      .mr15 {
+        margin-right: 5px;
+      }
+      .pb90 {
+        padding-bottom: 30px;
+      }
+      .pt90 {
+        padding-top: 30px;
+      }
+      .mb30 {
+        margin-bottom: 20px;
+      }
+      .mb20 {
+        margin-bottom: 4px;
+      }
+      .mt40 {
+        margin-top: 18px;
+      }
+}

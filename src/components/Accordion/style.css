@@ -8,7 +8,7 @@ div[aria-expanded="true"] .plusIcon {
     font-size: 18px;
   }
   .fw700{
-    font-weight: 900;
+    font-weight: 700;
   }
   .colorGrey{
     color: gray;
@@ -49,5 +49,11 @@ div[aria-expanded="true"] .plusIcon {
     }
     .accordion__button .accImg {
   display: none;
+    }
+    .fw700{
+      font-weight: 600;
+    }
+    .fs18 {
+      font-size: 15px;
     }
   }

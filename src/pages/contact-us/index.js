@@ -12,7 +12,7 @@ const ContactUs = (props) => {
     return state
 });
 
-console.log(selector?.type?.cntType);
+
   const [switcher, setswitcher] = useState(selector?.type?.cntType==="talent" ? true : false);
 
   return (
@@ -20,30 +20,34 @@ console.log(selector?.type?.cntType);
       <Helmet>
         <title>Contact Us | Unicon</title>
       </Helmet>
+     
       <BreadCrumb
-        title="Contact Us"
-        subTitle="We’re here to help. let’s connect."
-        items={[
-          { name: "Home", url: "/" },
-          { name: "Contact Us", url: "" },
-        ]}
+        // subTitle="Welcome to Alamo Primary Care"
+        title={
+          <div>
+            <span className="colorBlue">Contact</span>{" "}
+            <span className="colorGreen">Us</span>{" "}
+          </div>
+        }
+        bgImage={require("../../assets/img/contactus.png")}
       />
 
-      <section className="formSection">
+      <section className="formSectionA pt100 pb100 bgLightBluenew">
         <Container>
-          <div className="wrapperContact radius20">
+          <div className="wrapperContact">
             <Row className="justify-content-center">
               <Col lg={7}>
                 <div className="text-center mb30">
-                  <h2 className="fBold colorBlue mobFs28  fs36 ">Get In touch</h2>
-                  <p className="colorPara fs17">
-                  Whether you’re a professional looking for a job or a business seeking highly skilled talent, the team at Unicon are here for you.
-                  </p>
+                  <h2 className="fw700 colorGreen text-capitalize mobFs28  fs50 "><span className="colorBlue">Get in</span> Touch</h2>
+                  
                 </div>
+              </Col>
+              <Col lg={11}>
+                 <LookingForJob />
               </Col>
             </Row>
 
-            <div className="text-center mb20">
+            {/* <div className="text-center mb20">
               <ul className="noUl d-inline-flex tabbStyle justify-content-center">
                 <li>
                   <button
@@ -64,14 +68,14 @@ console.log(selector?.type?.cntType);
                   </button>
                 </li>
               </ul>
-            </div>
-            {!switcher && <LookingForJob />}
-            {switcher && <LookingForTalent />}
+            </div> */}
+            {/* {!switcher && <LookingForJob />}
+            {switcher && <LookingForTalent />} */}
           </div>
         </Container>
       </section>
 
-      <Location />
+      {/* <Location /> */}
     </>
   );
 };

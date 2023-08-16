@@ -24,14 +24,11 @@ const WhatWeDo = () => {
           <Col lg={5} className="intro-content">
             <div className="bgWhite shadowContent radius10 pl60 pr60 pt60 pb60">
               <h2 className="colorGreen fw600 fs45 mobFs28 fBold mb30">
-                <div className="colorBlue">Exceptional Care</div>
-                Tailored to Your Needs
+                <div className="colorBlue">Schedule an Appointment</div>
+                 Or Reach Out to Us
               </h2>
               <p className="fs18 fw400 colorBlue">
-                Welcome to Alamo Primary Care, your trusted provider of
-                comprehensive primary healthcare services in the heart of Alamo
-                City. We are dedicated to delivering personalized, compassionate
-                care that focuses on your overall well-being.
+              We look forward to serving you at Alamo Primary Care. Contact us today to schedule an appointment or if you have any questions or concerns. Our friendly staff is here to assist you.
               </p>
             </div>
           </Col>

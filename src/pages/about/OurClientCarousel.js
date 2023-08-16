@@ -55,17 +55,29 @@ const OurClientCarousel = () => {
   return (
     <section className="bgLightBlue pt80 pb80">
       <div className="container-xl">
+<<<<<<< HEAD
+        <h2 className="colorGreen fw700 fs45 mobFs28 fBold mb30 text-center">
+=======
         <h2 className="colorGreen fw600 fs45 mobFs28 fBold mb30 text-center">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
            What Are 
           <span className="colorBlue"> Saying Our Client</span>
         </h2>
         <Slider className="parentSl mb20 mobMb30" {...SliderSettings}>
           <div className="pl10 pr10 pt15 pb20">
+<<<<<<< HEAD
+          <div className="shadow  pt50 pb50 pl40 pr40 bgWhite mb50 position-relative border_bottom">
+            <div className="mb20">
+              {quote}
+            </div>
+            <p className="fs17 colorBlue">
+=======
           <div className="shadow  pt50 pb50 pl30 pr30 bgWhite mb50">
             <div className="mb20">
               {quote}
             </div>
             <p className="fs15 fw500 colorBlue">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
             </p>
           </div>
@@ -86,11 +98,19 @@ const OurClientCarousel = () => {
           </div>
 
           <div className="pl10 pr10 pt15 pb20">
+<<<<<<< HEAD
+          <div className="shadow  pt50 pb50 pl40 pr40 bgWhite mb50 position-relative border_bottom">
+            <div className="mb20">
+              {quote}
+            </div>
+            <p className="fs17 colorBlue">
+=======
           <div className="shadow  pt50 pb50 pl30 pr30 bgWhite mb50">
             <div className="mb20">
               {quote}
             </div>
             <p className="fs15 fw500 colorBlue">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
             </p>
           </div>
@@ -111,11 +131,19 @@ const OurClientCarousel = () => {
           </div>
 
           <div className="pl10 pr10 pt15 pb20">
+<<<<<<< HEAD
+          <div className="shadow  pt50 pb50 pl40 pr40 bgWhite mb50 position-relative border_bottom">
+            <div className="mb20">
+              {quote}
+            </div>
+            <p className="fs17 colorBlue">
+=======
           <div className="shadow  pt50 pb50 pl30 pr30 bgWhite mb50">
             <div className="mb20">
               {quote}
             </div>
             <p className="fs15 fw500 colorBlue">
+>>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
             </p>
           </div>

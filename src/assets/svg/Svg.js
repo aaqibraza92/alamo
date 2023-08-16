@@ -59,7 +59,7 @@ export const linkdinColor=<svg xmlns="http://www.w3.org/2000/svg" width="17.448"
 </svg>
 
 export const checkSvg=<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-<path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M20.563,10.562a10,10,0,1,1-10-10A10,10,0,0,1,20.563,10.562ZM9.406,15.857l7.419-7.419a.645.645,0,0,0,0-.912l-.912-.912a.645.645,0,0,0-.912,0L8.95,12.664,6.125,9.839a.645.645,0,0,0-.912,0l-.912.912a.645.645,0,0,0,0,.912l4.194,4.194A.645.645,0,0,0,9.406,15.857Z" transform="translate(-0.563 -0.563)" fill="#87a80d"/>
+<path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M20.563,10.562a10,10,0,1,1-10-10A10,10,0,0,1,20.563,10.562ZM9.406,15.857l7.419-7.419a.645.645,0,0,0,0-.912l-.912-.912a.645.645,0,0,0-.912,0L8.95,12.664,6.125,9.839a.645.645,0,0,0-.912,0l-.912.912a.645.645,0,0,0,0,.912l4.194,4.194A.645.645,0,0,0,9.406,15.857Z" transform="translate(-0.563 -0.563)" fill="#283178"/>
 </svg>
 
 export const angleRight=<svg xmlns="http://www.w3.org/2000/svg" width="5.5" height="9.5" viewBox="0 0 5.5 9.5">
@@ -85,20 +85,20 @@ export const mailIcon=<svg xmlns="http://www.w3.org/2000/svg" width="32" height=
 
 export const callIcon=<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 <g id="Group_116" data-name="Group 116" transform="translate(-261 -2504)">
-  <rect id="Rectangle_98" data-name="Rectangle 98" width="32" height="32" rx="8" transform="translate(261 2504)" fill="#55acee"/>
+  <rect id="Rectangle_98" data-name="Rectangle 98" width="32" height="32" rx="8" transform="translate(261 2504)" fill="#283178"/>
   <path id="Icon_ionic-md-call" data-name="Icon ionic-md-call" d="M19.611,15.611a10.433,10.433,0,0,1-3.155-.489.831.831,0,0,0-.889.222L13.611,17.3a13.367,13.367,0,0,1-5.867-5.867L9.7,9.478a.926.926,0,0,0,.222-.889,9.667,9.667,0,0,1-.533-3.2A.892.892,0,0,0,8.5,4.5H5.389a.892.892,0,0,0-.889.889A15.1,15.1,0,0,0,19.611,20.5a.892.892,0,0,0,.889-.889V16.5A.892.892,0,0,0,19.611,15.611Z" transform="translate(264.5 2507.5)" fill="#fff"/>
 </g>
 </svg>
 
 export const timeIcon=<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
 <g id="Icon_feather-clock" data-name="Icon feather-clock" transform="translate(-2 -2)">
-  <path id="Path_151" data-name="Path 151" d="M19,11a8,8,0,1,1-8-8A8,8,0,0,1,19,11Z" fill="none" stroke="#87a80d" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
-  <path id="Path_152" data-name="Path 152" d="M18,9v4.8l3.2,1.6" transform="translate(-7 -2.8)" fill="none" stroke="#87a80d" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
+  <path id="Path_151" data-name="Path 151" d="M19,11a8,8,0,1,1-8-8A8,8,0,0,1,19,11Z" fill="none" stroke="#283178" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
+  <path id="Path_152" data-name="Path 152" d="M18,9v4.8l3.2,1.6" transform="translate(-7 -2.8)" fill="none" stroke="#283178" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
 </g>
 </svg>
 
 export const burgerMenu=<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36">
-<path id="Icon_open-grid-three-up" data-name="Icon open-grid-three-up" d="M0,0V9H9V0ZM13.5,0V9h9V0ZM27,0V9h9V0ZM0,13.5v9H9v-9Zm13.5,0v9h9v-9Zm13.5,0v9h9v-9ZM0,27v9H9V27Zm13.5,0v9h9V27ZM27,27v9h9V27Z" fill="#87a80d"/>
+<path id="Icon_open-grid-three-up" data-name="Icon open-grid-three-up" d="M0,0V9H9V0ZM13.5,0V9h9V0ZM27,0V9h9V0ZM0,13.5v9H9v-9Zm13.5,0v9h9v-9Zm13.5,0v9h9v-9ZM0,27v9H9V27Zm13.5,0v9h9V27ZM27,27v9h9V27Z" fill="#283178"/>
 </svg>
 
 export const closeIcon=<svg xmlns="http://www.w3.org/2000/svg" width="20.953" height="20.953" viewBox="0 0 20.953 20.953">
@@ -110,10 +110,10 @@ export const angleDownIcon=<svg xmlns="http://www.w3.org/2000/svg" width="12" he
 </svg>
 
 export const downAngleSvg=<svg xmlns="http://www.w3.org/2000/svg" width="17.301" height="8.925" viewBox="0 0 17.301 8.925">
-<path id="Path_156" data-name="Path 156" d="M3984.674-5018.5l8,6.849,8-6.849" transform="translate(-3984.023 5019.26)" fill="none" stroke="#696b6e" strokeWidth="2"/>
+<path id="Path_156" data-name="Path 156" d="M3984.674-5018.5l8,6.849,8-6.849" transform="translate(-3984.023 5019.26)" fill="none" stroke="#283178" strokeWidth="2"/>
 </svg>
 export const upAngleSvg=<svg xmlns="http://www.w3.org/2000/svg" width="17.301" height="8.925" viewBox="0 0 17.301 8.925">
-<path id="Path_156" data-name="Path 156" d="M3984.674-5011.651l8-6.849,8,6.849" transform="translate(-3984.023 5019.816)" fill="none" stroke="#696b6e" strokeWidth="2"/>
+<path id="Path_156" data-name="Path 156" d="M3984.674-5011.651l8-6.849,8,6.849" transform="translate(-3984.023 5019.816)" fill="none" stroke="#283178" strokeWidth="2"/>
 </svg>
 
 export const arrowLeft=<svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">

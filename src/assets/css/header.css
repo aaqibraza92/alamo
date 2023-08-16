@@ -10,6 +10,7 @@
 .headerMenu > li > a {
   padding-left: 14px;
   padding-right: 14px;
+  text-transform: uppercase;
 }
 .headerMenu > li > a:hover {
   background: var(--colorGreen);
@@ -83,7 +84,7 @@
   z-index: 9999;
   top: 0;
   left: 0;
-  background-color: rgba(0, 68, 116, 0.97);
+  background-color: rgb(42, 51, 121);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -98,7 +99,7 @@
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  /* font-size: 36px; */
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -120,19 +121,43 @@
   .img-fluid.mainLogo {
     width: 100px;
   }
-
+  .newslide .slick-slide img {
+    display: block;
+    width: 49px;
+  }
+  .mobMb30{
+    margin-bottom: 30px;
+  }
+  
+  .topDown {
+  
+    box-shadow: none;
+  }
+  .topDown {
+    position: relative;
+  }
   .topDown .triggerMenu svg {
     width: 24px;
   }
   header {
-    padding: 10px 0;
+    padding: 0px 0;
   }
   
   body .topDown {
     padding: 10px 0;
   }
-  .topDown .mainLogo {
-    width: 83px;
+  .img-fluid.mainLogo {
+    width: 100%;
+  }
+  body .upperHeader.pb20 {
+    padding-bottom: 13px;
+  }
+  body .upperHeader.pt20 {
+    padding-top: 13px;
+  }
+  .overlay-content .headerMenu {
+    display: block !important;
+    height: auto !important;
   }
 }
 @media screen and (max-height: 450px) {
@@ -144,6 +169,7 @@
     top: 15px;
     right: 35px;
   }
+  
 }
 .enableMobileMenu {
   width: 100% !important;
@@ -160,8 +186,8 @@
 
 .overlay-content .headerMenu > li > a {
   color: #fff;
-  font-size: 24px;
-  display: block;
+  /* font-size: 24px;
+  display: block; */
   width: 100%;
 }
 .overlay-content .headerMenu > li > ul.subMenu {
@@ -219,4 +245,7 @@
 }
 img.img-fluid.mainLogo {
   max-width: 231px;
+}
+.topDown .headerMenu {
+  height: 50px;
 }

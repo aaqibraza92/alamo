@@ -64,12 +64,12 @@ const OurTeam = () => {
         <div className="container-xl">
           <Row className="justify-content-center ">
             <Col lg={8}>
-              <h2 className="colorWhite fs50 fw600 mb20">Meet Our Team</h2>
+              <h2 className="colorWhite fs50 fw600 mb20">Providers And The Practice Manager.</h2>
               <p className="colorWhite fs20 fw600 mb30">
                 Experienced and Compassionate Professionals
               </p>
 
-              <p className="colorWhite fs15 fw400 mb20">
+              {/* <p className="colorWhite fs15 fw400 mb20">
                 We take great pride in our team of highly skilled and
                 compassionate healthcare providers at Alamo Primary Care. Our
                 team includes board-certified physicians, nurse practitioners,
@@ -86,7 +86,7 @@ const OurTeam = () => {
                 Get to know our team and rest assured that you are in capable
                 hands when you choose Alamo Primary Care for your healthcare
                 needs.
-              </p>
+              </p> */}
             </Col>
           </Row>
          

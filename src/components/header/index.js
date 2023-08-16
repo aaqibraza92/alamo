@@ -83,9 +83,9 @@ const Header = () => {
                         </p>
                     
                       </div>
-                        <a href="tel:+91 9999 999 999" className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span>  +91 9999 999 999</a>
-                    <Link className="btnTheme bgBlue  mr12 fMedium btnMob fw700">New-Patient-Registration</Link>
-                    <Link className="btnTheme bgGreen mr0 fMedium btnMob fw700">Book Appointment </Link>
+                        <a href="tel:210-571-1338" className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span>  210-571-1338</a>
+                    <Link className="btnTheme bgBlue  mr12 fMedium btnMob fw500">New-Patient-Registration</Link>
+                    <Link to="/contact-us" className="btnTheme bgGreen mr0 fMedium btnMob fw500">Book Appointment </Link>
                     </div>
 
               </div>
@@ -126,7 +126,7 @@ const Navbar = (props) => {
   },[])
 
   return (
-    <div className={`navWrapper bgBlue ${stickyHeader}`}>
+    <div className={`navWrapper bgBlue mobileheader ${stickyHeader}`}>
         <Container>
         <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center justify-content-between">
       <li>
@@ -135,7 +135,7 @@ const Navbar = (props) => {
         </Link>
       </li>
       <li>
-        <Link to="#" className="colorWhite">
+        <Link to="/about-us" className="colorWhite clickToClose">
         About Us 
         </Link>
       </li>
@@ -160,20 +160,20 @@ const Navbar = (props) => {
       </li> */}
 
       <li>
-        <Link to="#" className="colorWhite">
+        <Link to="/services" className="colorWhite clickToClose">
         Services 
         </Link>
       </li>
       <li>
-        <Link to="#" className="colorWhite">
-        Meet Our Team  
+        <Link to="/#" className="colorWhite clickToClose">
+       Blog 
         </Link>
       </li>
-      <li>
-        <Link to="/contact-us" className="colorWhite clickToClose">
-        Patient Resources  
+      {/* <li>
+        <Link to="/#" className="colorWhite clickToClose">
+        Patient Portal 
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/contact-us" className="colorWhite clickToClose">
         Contact US
