@@ -176,8 +176,8 @@ const Navbar = (props) => {
         </Link>
       </li> */}
       <li>
-        <Link to="mailto:admin@alamoprimarycare.com" className="colorWhite clickToClose">
-        Contact US
+        <Link to="/contact-us" className="colorWhite clickToClose">
+        Contact Us
         </Link>
       </li>
       <li className="destop-none">
@@ -188,7 +188,7 @@ const Navbar = (props) => {
 
       </li>
       <li className="destop-none">
-      <Link className="colorWhite clickToClose" to="/contact-us" target="_blank" >Book appointment</Link>
+      <Link className="colorWhite clickToClose" to="/contact-us" >Book appointment</Link>
       
       </li>
     </ul>

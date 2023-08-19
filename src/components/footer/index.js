@@ -22,11 +22,14 @@ const Footer = () => {
         <Row className="gy-5">
           <Col lg={3} md={3} xl={3}>
           <Link to="/">
-              <img
-                className="img-fluid fooTerLogo mb-3"
+          <div className="bgWhite pt15 pb15 pl15 pr15 radius mb15 text-center col-md-11">
+  <img
+                className="img-fluid fooTerLogo"
                 src={require("../../assets/img/main_logo.png")}
                 alt="logo"
               />
+          </div>
+            
             </Link>
 
             <div className="social">
@@ -158,13 +161,13 @@ const Footer = () => {
              Locate us
             </h3>
            
-            <Link to="https://goo.gl/maps/e3EX98ZVaiYGUo4x7" target="_blank">
+            <a href="https://maps.app.goo.gl/yNpYw9E1DP481WEu5" target="_blank">
               <img
                 className="img-fluid radius10 "
                 src={require("../../assets/img/Regulatory.png")}
                 alt="logo"
               />
-            </Link>
+            </a>
             
        
           </Col>
