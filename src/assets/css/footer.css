@@ -8,21 +8,25 @@ footer {
   a.itemLightwhite:hover{
     color:#c2c6ca;
   }
-  .socailMedia li a:hover path{
-    fill:#87A80D !important;
+  
+  .social a {
+    margin-right: 15px;
+    font-size: 33px;
   }
-  .copyright {
-    border-top: 1px solid #323d4c;
+  .social a svg {
+    fill: #55af4d;
   }
-  .footer_logo{
-    filter: brightness(0) invert(1);
+  .social a:hover svg {
+    fill: #fff;
   }
-
+  .fooTerLogo {
+    /* background-color: #fff;
+    padding: 17px;
+    border-radius: 5px; */
+    width: 90%;
+  }
   @media only screen and (max-width:767px) {
-  a.itemLightwhite {
-    color: #c2c6ca;
-    font-size: 14px;
-  }
+ 
 }
 footer ul li a:hover{
   color: var(--colorGreen) !important;

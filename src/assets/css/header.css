@@ -22,8 +22,8 @@
   top: 0px;
   z-index: 999;
   background: #fff;
-  -webkit-box-shadow: 0px 10px 60px #b0bac554;
-  box-shadow: 0px 10px 60px #b0bac554;
+  -webkit-box-shadow: 0px 0px 10px #b0bac554;
+  box-shadow: 0px 0px 10px #b0bac554;
 }
 
 /*menu*/
@@ -116,6 +116,9 @@
   font-size: 17px;
   color: #fff;
 }
+.destop-none {
+  display: none !important;
+}
 
 @media screen and (max-width: 1024px) {
   .img-fluid.mainLogo {
@@ -125,8 +128,16 @@
     display: block;
     width: 49px;
   }
+  .destop-none {
+    display: block !important;
+  }
   .mobMb30{
     margin-bottom: 30px;
+  }
+  .overlay-content .headerMenu > li > a {
+   
+    font-size: 18px !important;
+   
   }
   
   .topDown {

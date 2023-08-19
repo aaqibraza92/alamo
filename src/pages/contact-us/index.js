@@ -47,35 +47,11 @@ const ContactUs = (props) => {
               </Col>
             </Row>
 
-            {/* <div className="text-center mb20">
-              <ul className="noUl d-inline-flex tabbStyle justify-content-center">
-                <li>
-                  <button
-                    className={`transition  colorGreen ${
-                      !switcher && "active"
-                    }`}
-                    onClick={() => setswitcher(false)}
-                  >
-                    LOOKING FOR A JOB?
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className={`transition colorGreen ${switcher && "active"}`}
-                    onClick={() => setswitcher(true)}
-                  >
-                    LOOKING FOR TALENT?
-                  </button>
-                </li>
-              </ul>
-            </div> */}
-            {/* {!switcher && <LookingForJob />}
-            {switcher && <LookingForTalent />} */}
+
           </div>
         </Container>
       </section>
 
-      {/* <Location /> */}
     </>
   );
 };

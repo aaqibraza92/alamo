@@ -36,7 +36,7 @@ const HomeBanner = () => {
                 <div className="d-flex">
                   <Link
                     className="btnTheme bgGreen mr12 fMedium btnMob"
-                    to="#"
+                    to="mailto:admin@alamoprimarycare.com"
                     onClick={()=>contactTypeHandle("talent")}
                   >
                     Contact Us

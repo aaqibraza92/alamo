@@ -10,7 +10,6 @@ import "react-datepicker/dist/react-datepicker.css";
 const LookingForJob = () => {
   const [firstName, setfirstName] = useState("");
   const [lname, setlname] = useState("");
-  const [company, setcompany] = useState("");
   const [phone, setphone] = useState("");
   const [email, setemail] = useState("");
   const [location, setlocation] = useState("");
@@ -19,50 +18,53 @@ const LookingForJob = () => {
   const [dob, setdob] = useState("");
   const [policyNumber, setpolicyNumber] = useState("");
   const [policyEmployer, setpolicyEmployer] = useState("");
-
-  const [mesage, setmesage] = useState("");
-  const [jobType, setjobType] = useState("");
-  const [resume, setresume] = useState("");
-  const [fileName, setfileName] = useState("");
+  // const [term1, setterm1] = useState(false);
+  const [term2, setterm2] = useState(false);
+  const [status,setStatus]= useState(false);
   const notify = (v) => toast(v);
 
   console.log();
 
-  const uploadHandle = (e) => {
-    setresume(e.target.files[0]);
-    setfileName(e.target.files[0].name);
-  };
+
 
   const clearfeilds = () => {
     setfirstName("");
     setlname("");
-    setcompany("");
     setphone("");
     setemail("");
-    setmesage("");
-    setjobType("");
-    setresume("");
+    setinsuranceName("");
+    setlocation("");
+    setholderName("");
+    setdob("");
+    setpolicyNumber("");
+    setpolicyEmployer("")
   };
   const [validations, setValidations] = React.useState({
     first_name: "",
     lname: "",
-    company: "",
+    location: "",
     phone: "",
     email: "",
-    mesage: "",
-    jobType: "",
-    resume: "",
+    insuranceName: "",
+    holderName: "",
+    dob: "",
+    policyNumber: "",
+    policyEmployer: "",
+    term2: false,
   });
   const validateAll = () => {
     const validations = {
       first_name: "",
       lname: "",
-      company: "",
+      location: "",
       phone: "",
       email: "",
-      mesage: "",
-      jobType: "",
-      resume: "",
+      insuranceName: "",
+      holderName: "",
+      dob: "",
+      policyNumber: "",
+      policyEmployer: "",
+      term2: false
     };
     let isValid = true;
 
@@ -88,18 +90,39 @@ const LookingForJob = () => {
       validations.phone = "Phone is required";
       isValid = false;
     }
-    if (!mesage) {
-      validations.mesage = "Mesage is required";
+    if (!insuranceName) {
+      validations.insuranceName = "Insurance Name is required";
       isValid = false;
     }
-    if (!jobType) {
-      validations.jobType = "Job Type is required";
+    if (!holderName) {
+      validations.holderName = "Holder Name is required";
       isValid = false;
     }
-    if (!resume) {
-      validations.resume = "Please upload resume, Pdf or image format";
+    if (!dob) {
+      validations.dob = "DOB is required";
       isValid = false;
     }
+    if (!policyNumber) {
+      validations.policyNumber = "Policy Number is required";
+      isValid = false;
+    }
+    if (!policyEmployer) {
+      validations.policyEmployer = "Policy Employer is required";
+      isValid = false;
+    }
+    if (!location) {
+      validations.location = "Geo Location is required";
+      isValid = false;
+    }
+    // if (!term1) {
+    //   validations.term1 = "This is required";
+    //   isValid = false;
+    // }
+    if (!term2) {
+      validations.term2 = "This is required";
+      isValid = false;
+    }
+
     if (!isValid) {
       setValidations(validations);
     }
@@ -108,21 +131,26 @@ const LookingForJob = () => {
   };
 
   const onSubmitHandler = (e) => {
+    
     e.preventDefault();
     const isValid = validateAll();
     if (!isValid) {
       return false;
     }
+    setStatus(true);
 
     const iData = new FormData();
-    iData.append("FirstName", firstName);
-    iData.append("LastName", lname);
-    iData.append("company", company);
+    iData.append("First_Name", firstName);
+    iData.append("Last_Name", lname);
     iData.append("phone", phone);
-    iData.append("email", email);
-    iData.append("mesage", mesage);
-    iData.append("job_type", jobType.value);
-    iData.append("file-65", resume);
+    iData.append("your-email", email);
+    iData.append("Geo_Location", location);
+    iData.append("Insurance_Name", insuranceName);
+    iData.append("DOB", dob);
+    iData.append("Policyholder_Name", holderName);
+    iData.append("Holders_SS", policyNumber);
+    iData.append("Holder_Employer", policyEmployer);
+
 
     const options = {
       method: "POST",
@@ -135,6 +163,7 @@ const LookingForJob = () => {
     axios.post(CONTACT_FORM + 8 + "/feedback", iData, options).then((res) => {
       if (res && res.status === 200) {
         clearfeilds();
+        setStatus(false);
         notify(res?.data?.message);
       }
     });
@@ -221,7 +250,7 @@ const LookingForJob = () => {
                 placeholder="Geo location"
                 onChange={(e) => setlocation(e.target.value)}
                 value={location}
-                name="lname"
+                name="location"
               />
               {validations?.location && (
                 <div className="validation">
@@ -279,7 +308,6 @@ const LookingForJob = () => {
                 className="inputTheme w-100"
                 name="dob"
                 locale="es"
-                minDate={new Date()}
                 placeholderText="Policy holder’s DOB*"
               />
 
@@ -295,7 +323,7 @@ const LookingForJob = () => {
               <input
                 type="text"
                 className="inputTheme w-100"
-                placeholder="Policy holder’s SS#*"
+                placeholder="Policy holder’s Phone No.*"
                 onChange={(e) => setpolicyNumber(e.target.value)}
                 value={policyNumber}
                 name="lname"
@@ -326,7 +354,7 @@ const LookingForJob = () => {
           </Col>
 
           <Col lg={11}>
-            <div className="d-flex mb15">
+            {/* <div className="d-flex mb15 pointer">
               <input
                 type="checkbox"
                 id="term1"
@@ -335,10 +363,10 @@ const LookingForJob = () => {
                     surgical/procedure benefits to include major medical
                     benefits to which I am entitled, including Medicare, private
                     insurance, and other health plans to Alamo Primary Care."
+                onChange={(e) => setterm1(!term1)}
               />
               <div>
                 <label for="term1">
-                  {" "}
                   <p className="fs14 colorBlue ml10 mb0">
                     I hereby assign all medical and/or in-office
                     surgical/procedure benefits to include major medical
@@ -348,8 +376,13 @@ const LookingForJob = () => {
                 </label>
               </div>
             </div>
+            {validations?.term1 && (
+              <div className="validation">
+                {validations?.term1.replace("_", " ")}
+              </div>
+            )} */}
 
-            <div className="d-flex">
+            <div className="d-flex pointer">
               <input
                 type="checkbox"
                 id="term2"
@@ -358,10 +391,10 @@ const LookingForJob = () => {
               financially responsible for all charges whether or not paid by
               insurance. I hereby authorize said assignee to release all
               information to secure payment."
+                onChange={(e) => setterm2(!term2)}
               />
               <div>
                 <label for="term2">
-                  {" "}
                   <p className="fs14 colorBlue ml10 mb0">
                     This assignment is valid as an original. I understand that I
                     am financially responsible for all charges whether or not
@@ -371,7 +404,11 @@ const LookingForJob = () => {
                 </label>
               </div>
             </div>
-            <p className="fs14 colorBlue text-center"></p>
+            {validations?.term2 && (
+              <div className="validation">
+                {validations?.term2.replace("_", " ")}
+              </div>
+            )}
           </Col>
 
           <Col lg={12}>
@@ -381,7 +418,7 @@ const LookingForJob = () => {
                 type="submit"
                 className="noBtn fs25 fw700 bgBlue btnTheme w-50"
               >
-                Submit Now
+               {status ? "Sending..." : "Submit Now"} 
               </button>
             </div>
           </Col>

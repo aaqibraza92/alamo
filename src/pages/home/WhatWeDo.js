@@ -27,9 +27,11 @@ const WhatWeDo = () => {
                 <div className="colorBlue">Schedule an Appointment</div>
                  Or Reach Out to Us
               </h2>
-              <p className="fs18 fw400 colorBlue">
+              <p className="fs18 fw400 colorBlue mb25">
               We look forward to serving you at Alamo Primary Care. Contact us today to schedule an appointment or if you have any questions or concerns. Our friendly staff is here to assist you.
               </p>
+              <Link to="/contact-us" className="btnTheme bgGreen mr0 fMedium btnMob fw500">Book Appointment </Link>
+              <a href="tel:210-571-1338" className="btnTheme bgBlue mr0 fMedium btnMob fw500 ml15">Call Us </a>
             </div>
           </Col>
         </Row>

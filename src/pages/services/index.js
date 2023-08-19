@@ -4,87 +4,45 @@ import ImageContent from "../home/ImageContent";
 import CallToAction from "../../components/CallToAction";
 import { Col, Container, Row } from "reactstrap";
 import WhatWeDo from "../home/WhatWeDo";
-import OurTeam from "../home/OurTeam";
 import { Helmet } from "react-helmet";
 
 let data=[
     {
         img: require('../../assets/img/service/sr1.png'),
-<<<<<<< HEAD
         title: "Routine check-ups and preventive care",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
+         content: "Routine check-ups and preventive care offer numerous benefits to individuals of all ages. Our services help monitor health status, detect potential problems before they become serious, and provide personalized guidance to enhance well-being, Preventive care encompasses various aspects, including immunizations, screenings, counseling, and education. It empowers individuals to take control of their health and make informed decisions about their lifestyles."
     },
     {
         img: require('../../assets/img/service/sr2.png'),
-        title: " Immunizations and vaccinations",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
+        title: " Immunization and vaccination ",
+         content: "Immunization and vaccination services are a cornerstone of preventive healthcare, safeguarding individuals and communities from the burden of infectious diseases. With our comprehensive approach, expert care, and emphasis on education, we strive to promote healthier lives and a safer future for all."
     },
     {
         img: require('../../assets/img/service/sr3.png'),
         title: "Chronic disease management",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
+        content: "Chronic disease management services play a significant role in reducing healthcare costs, hospitalizations, and complications associated with chronic conditions. By providing individuals with our state-of-the-art facility and personal support needed to manage their conditions effectively, these services contribute to better quality of life and overall health outcomes."
     },
     {
-        img: require('../../assets/img/service/sr4.png'),
+        img: require('../../assets/img/service/health.png'),
         title: " Health screenings and diagnostic tests",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
+        content: "Health screenings and diagnostic tests are very important to maintain and improve health. These services involve the early detection, diagnosis, and monitoring of various medical conditions, allowing for timely interventions and treatments. "
+    },
+    {
+        img: require('../../assets/img/service/man_health.png'),
+        title: "Men’s health services",
+         content: "Men's health services often recognize the unique health challenges and concerns that every Man faces, as well as the importance of encouraging men to seek medical care and openly discuss their health. Our well trained team who specialize in men's health may offer tailored advice and treatment plans to address these specific needs. It's important for men to engage in regular health check-ups and screenings and to communicate openly with their healthcare providers about their concerns and questions."
     },
     {
         img: require('../../assets/img/service/sr5.png'),
-        title: "Men’s health services",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr6.png'),
         title: "Women's health services",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
+         content: "It's important for women to receive regular check-ups and screenings to maintain their overall health and catch any potential health issues early on."
     },
     {
-        img: require('../../assets/img/service/sr7.png'),
+        img: require('../../assets/img/service/sr4.png'),
         title: "Geriatric care ",
-        // content: "There are many variations of passages of Lorem Ipsum available, but the majority"
+        content: "It's important to tailor geriatric care to each person's unique needs and circumstances. The specific services needed will depend on the individual's health status, level of independence, and personal preferences."
     },
    
-=======
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr2.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr3.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr4.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr5.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr6.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr7.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
-    {
-        img: require('../../assets/img/service/sr8.png'),
-        title: "Anywhere visits and same-day appointments",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority"
-    },
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
 
 ];
 
@@ -95,11 +53,7 @@ const Service = () => {
         <title>Services - Alamo</title>
       </Helmet>
       <BreadCrumb
-<<<<<<< HEAD
         // subTitle="Welcome to Alamo Primary Care"
-=======
-        subTitle="Welcome to Alamo Primary Care"
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
         title={
           <div>
             <span className="colorBlue">Our</span>{" "}
@@ -113,44 +67,17 @@ const Service = () => {
         ]}
         bgImage={require("../../assets/img/service/service_hero.png")}
       />
-<<<<<<< HEAD
-      {/* <ImageContent
-=======
-      <ImageContent
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
-        img={require("../../assets/img/service/lady.png")}
-        title={
-          <div>
-            <div className="colorGreen">We want you</div>
-            to be healthy and happy.
-          </div>
-        }
-        content="Welcome to Alamo Primary Care, your trusted provider of comprehensive primary healthcare services in the heart of Alamo City. We are dedicated to delivering personalized, compassionate care that focuses on your overall well-being."
-<<<<<<< HEAD
-      /> */}
+    
         
         <section className="bgLightBlue pt80 pb80">
         <div className="container-xl">
-            {/* <h2 className="colorBlue fs50 fw700  text-center"><span className="colorGreen">Our</span> Services</h2> */}
-            <h4 className="text-center fs24 fs700  colorBlue w-80 m-auto pb40">Our dedicated team works collaboratively to develop personalized treatment that cater to your specific needs, ensuring you receive the highest level of care.</h4>
-=======
-      />
-        <CallToAction title="Get started with alamo primarycare"
-        buttonName1="New-Patient-Registration"
-        buttonName2="Book Appointment"
-        link1="#"
-        link2="#"
-        bgImg={require('../../assets/img/bgImg.png')}
-        />
-        <section className="bgLightBlue pt80 pb80">
-        <div className="container-xl">
-            <h2 className="colorBlue fs50 fw600 mb60 text-center"><span className="colorGreen">Our</span> Services</h2>
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
+            {/* <h2 className="colorBlue fs50 fw700  text-center"><span className="colorGreen">Our Dedicated Team Works</h2> */}
+            <h4 className="text-center fs24 fs700 mobFs19 colorBlue w-80 m-auto pb40">Our Dedicated Team work collaboratively to develop personalized treatment that cater to your specific needs, ensuring you receive the highest level of care.</h4>
             <Row className="gy-3">
             {
                 data.map((e,i)=>(
-                    <Col lg={3} md={3} key={i}>
-                        <div className="bgWhite pt40 pb40 pl30 pr30 minH">
+                    <Col lg={6} md={6} key={i}>
+                        <div className="bgWhite pt40 pb40 pl30 pr30 minH hovers transition">
                         <div className="mb30">
                             <img src={e.img} className="img-fluid" alt="" />
                         </div>
@@ -169,20 +96,15 @@ const Service = () => {
             </div>
         </section>
 
-<<<<<<< HEAD
         {/* <OurTeam className="servicePage" /> */}
         <WhatWeDo />
         <CallToAction title="Get started with alamo primary care"
         buttonName1="New-Patient-Registration"
         buttonName2="Book Appointment"
-        link1="#"
-        link2="#"
+        link1="/contact-us"
+        link2="/#"
         bgImg={require('../../assets/img/bgImg.png')}
         />
-=======
-        <OurTeam className="servicePage" />
-        <WhatWeDo />
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
     </div>
   );
 };

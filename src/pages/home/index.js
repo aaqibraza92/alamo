@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Alamo</title>
+        <title>Home - Alamo Primary Care</title>
       </Helmet>
     <main>
     <HomeBanner/>
@@ -21,7 +21,7 @@ const HomePage = () => {
     <ImageContent/>
     <CallToActionFirst/>
     <OurServices/>
-    <OurTeam/>
+    {/* <OurTeam/> */}
     <CallToAction/>
     {/* <PractiseAreas/> */}
     {/* <WhyChosseUs/> */}

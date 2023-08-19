@@ -51,7 +51,7 @@ const Header = () => {
         </div>
       </div>
     <div className={`upperHeader pt20 pb20 `}>
-    <Container>
+    <div className="container-xl">
         <Row className="align-items-center">
           <Col lg={3} md={3} xs={6}>
             <Link to="/">
@@ -83,9 +83,10 @@ const Header = () => {
                         </p>
                     
                       </div>
-                        <a href="tel:210-571-1338" className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span>  210-571-1338</a>
-                    <Link className="btnTheme bgBlue  mr12 fMedium btnMob fw500">New-Patient-Registration</Link>
-                    <Link to="/contact-us" className="btnTheme bgGreen mr0 fMedium btnMob fw500">Book Appointment </Link>
+                        <Link href="tel:210-571-1338" className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span>  210-571-1338</Link>
+                        <a href="https://www.healowpay.com/HealowPay/jsp/healow/login.jsp" target="_blank" className="btnTheme bgGreen  fMedium btnMob fw500 mr12">Pay Online </a>
+                        <Link to="https://mycw192.ecwcloud.com/portal24523/jsp/100mp/login_otp.jsp" target="_blank" className="btnTheme bgBlue  mr12 fMedium btnMob fw500">Patient Portal</Link>
+                        <Link to="/contact-us" className="btnTheme bgGreen mr0 fMedium btnMob fw500">Book Appointment </Link>
                     </div>
 
               </div>
@@ -93,7 +94,7 @@ const Header = () => {
             
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
      
               
@@ -175,9 +176,20 @@ const Navbar = (props) => {
         </Link>
       </li> */}
       <li>
-        <Link to="/contact-us" className="colorWhite clickToClose">
+        <Link to="mailto:admin@alamoprimarycare.com" className="colorWhite clickToClose">
         Contact US
         </Link>
+      </li>
+      <li className="destop-none">
+        <Link className="colorWhite clickToClose" to="https://www.healowpay.com/HealowPay/jsp/healow/login.jsp" target="_blank" >Pay Online </Link>
+      </li>
+      <li className="destop-none">
+      <Link className="colorWhite clickToClose" to="https://mycw192.ecwcloud.com/portal24523/jsp/100mp/login_otp.jsp" target="_blank" >Patient Portal</Link>
+
+      </li>
+      <li className="destop-none">
+      <Link className="colorWhite clickToClose" to="/contact-us" target="_blank" >Book appointment</Link>
+      
       </li>
     </ul>
        </Container>

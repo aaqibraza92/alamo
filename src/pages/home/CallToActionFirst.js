@@ -62,44 +62,7 @@ const CallToActionFirst = () => {
     <section className="text-center bgImage pt80 pb100 mobPt50 mobPb30 callToFirst" style={{ backgroundImage: `url(${bgImage})` }} >
       <div className="container-xl">
 
-    
-          {/* <Row className="gy-5">
-        <Col lg={4} md={6} xl={4}>
-            <div className="text-center serList bgWhite position-relative pl40 pr40 pb20 transition">
-              <div className="iconWrapper d-flex align-items-center justify-content-center">
-                <img src={require('../../assets/img/s1.svg').default} className="img-fluid" alt="" />
-              </div>
-              <p className="mb0 fs20 fw400 colorBlue">
-              Our mission is to provide exceptional healthcare services to individuals and families of all ages, promoting preventive care and empowering you to make informed decisions about your health.
-              </p>
-            </div>
-        </Col>
-        <Col lg={4} md={6} xl={4}>
-            <div className="text-center serList bgWhite position-relative pl40 pr40 pb20 transition">
-              <div className="iconWrapper d-flex align-items-center justify-content-center">
-                <img src={require('../../assets/img/s2.svg').default} className="img-fluid" alt="" />
-              </div>
-              <p className="mb0 fs20 fw400 colorBlue">
-              Our state-of-the-art facility is equipped with advanced technology and staffed by a team of experienced healthcare professionals who are committed to your comfort and satisfaction.
-              </p>
-            </div>
-        </Col>
-        <Col lg={4} md={12} xl={4}>
-            <div className="text-center serList bgWhite position-relative pl40 pr40 pb20 transition">
-              <div className="iconWrapper d-flex align-items-center justify-content-center">
-                <img src={require('../../assets/img/s3.svg').default} className="img-fluid" alt="" />
-              </div>
-              <p className="mb0 fs20 fw400 colorBlue">
-              We strive to create a warm and welcoming environment where you can feel at ease while receiving the highest quality of care.
-              </p>
-            </div>
-        </Col>
-      </Row> */}
-
-       
-
-     
-
+  
 
         <Slider className="parentSl" {...SliderSettings}>
 

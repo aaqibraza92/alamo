@@ -28,6 +28,13 @@
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
   }
+  .MinSliderH .slick-slide .shadow {
+    height: 308px;
+  }
+  .imgClient img {
+    border-radius: 50%;
+    border: 5px solid #55af4d;
+  }
   @media screen and (max-width: 1024px) {
 
   .videoWrapper video {

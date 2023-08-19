@@ -1,5 +1,22 @@
 /*All Mobile*/
 @media only screen and (max-width: 767px) {
+  header.transition {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+  }
+  .newslide .mb20 {
+    margin-bottom: 0px;
+  }
+  .newslide .mt40{
+    margin-top: 20px;
+  }
+  .newslide .btnTheme {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   body .mobMr0 {
     margin-right: 0px;
   }
@@ -183,6 +200,16 @@
 
 /*All Small Tablets*/
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+  .newslide .mb20 {
+    margin-bottom: 0px;
+  }
+  .newslide .mt40{
+    margin-top: 20px;
+  }
+  .newslide .btnTheme {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   body .mobJustifyContentStart {
     justify-content: flex-start !important;
   }
@@ -204,6 +231,13 @@
 
 /*All large Tablets*/
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  header.transition {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+  }
   body .tabWidth100 {
     width: 100%;
   }

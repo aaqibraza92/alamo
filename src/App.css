@@ -34,6 +34,7 @@ a.line {
   text-decoration: underline !important;
 }
 @media only screen and (max-width: 767px) {
+
   body .wrapperContact {
     padding: 15px;
   }
@@ -270,4 +271,10 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.pointer{
+  cursor: pointer;
+}
+body{
+  overflow-x: hidden;
 }

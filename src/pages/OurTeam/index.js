@@ -4,12 +4,8 @@ import BreadCrumb from "../../components/BreadCrumb";
 import TeamItems from "./TeamItems";
 import { Helmet } from "react-helmet";
 import CallToAction from "../../components/CallToAction";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import bgImage from "../../assets/img/ourteamBG.png";
-=======
-
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
 const OurTeam = () => {
   return (
     <>
@@ -29,22 +25,14 @@ const OurTeam = () => {
   <section className="pt80 pb80 whatWeDo">
       <div className="container-xl">
         <Row className="align-items-center gy-3">
-<<<<<<< HEAD
           <Col lg={6}>
-=======
-          <Col lg={7}>
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             <img
               src={require("../../assets/img/team/team1.png")}
               className="img-fluid radius19"
               alt="what we do"
             />
           </Col>
-<<<<<<< HEAD
           <Col lg={6} className="intro-content">
-=======
-          <Col lg={5} className="intro-content">
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             <div className="bgWhite shadowContent radius10 pl15 pr15 pt60 pb60 text-center">
               <h2 className="colorBlue fw600 fs45 mobFs28 fBold mb30">
                 Dr. Chewing Shinlong
@@ -53,17 +41,12 @@ const OurTeam = () => {
               D.N.Sc. - M.B.B.S,Ph.D
               </h5>
          
-<<<<<<< HEAD
               <p className="fs18 fw400 colorBlue w-80 m-auto">
-=======
-              <p className="fs18 fw400 colorBlue">
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                 Welcome to Alamo Primary Care, your trusted provider of
                 comprehensive primary healthcare services in the heart of Alamo
                 City. We are dedicated to delivering personalized, compassionate
                 care that focuses on your overall well-being.
               </p>
-<<<<<<< HEAD
 
               <div class="bglight radius10 p-3 mt20">
                   <Row>
@@ -106,15 +89,12 @@ const OurTeam = () => {
                   </Row>
               </div>
 
-=======
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             </div>
           </Col>
         </Row>
       </div>
     </section>
 
-<<<<<<< HEAD
 
     <section className="pt80 pb80 whatWeDo"
     style={{ backgroundImage: `url(${bgImage})` }}>
@@ -196,23 +176,13 @@ const OurTeam = () => {
       <div className="container-xl">
         <Row className="align-items-center gy-3">
           <Col lg={6}>
-=======
-    <section className="pt80 pb80 whatWeDo">
-      <div className="container-xl">
-        <Row className="align-items-center gy-3">
-          <Col lg={7}>
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             <img
               src={require("../../assets/img/team/team3.png")}
               className="img-fluid radius19"
               alt="what we do"
             />
           </Col>
-<<<<<<< HEAD
           <Col lg={6} className="intro-content">
-=======
-          <Col lg={5} className="intro-content">
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             <div className="bgWhite shadowContent radius10 pl15 pr15 pt60 pb60 text-center">
               <h2 className="colorBlue fw600 fs45 mobFs28 fBold mb30">
                 Dr. Chewing Shinlong
@@ -221,17 +191,12 @@ const OurTeam = () => {
               D.N.Sc. - M.B.B.S,Ph.D
               </h5>
          
-<<<<<<< HEAD
               <p className="fs18 fw400 colorBlue w-80 m-auto">
-=======
-              <p className="fs18 fw400 colorBlue">
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
                 Welcome to Alamo Primary Care, your trusted provider of
                 comprehensive primary healthcare services in the heart of Alamo
                 City. We are dedicated to delivering personalized, compassionate
                 care that focuses on your overall well-being.
               </p>
-<<<<<<< HEAD
               <div class="bglight radius10 p-3 mt20">
                   <Row>
                      <Col md={6} className="justify-content-center d-flex mobilecontentstart mb5">
@@ -272,19 +237,13 @@ const OurTeam = () => {
                      </Col>
                   </Row>
               </div>
-=======
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
             </div>
           </Col>
         </Row>
       </div>
     </section>
     <CallToAction
-<<<<<<< HEAD
         title="Get started with alamo primary care"
-=======
-        title="Get started with alamo primarycare"
->>>>>>> c6a4cec51c0ad5e7e340bed0fe1f690718f88e2b
         buttonName1="New-Patient-Registration"
         buttonName2="Book Appointment"
         link1="#"
