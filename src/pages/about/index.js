@@ -44,7 +44,7 @@ const AboutUs = () => {
               <div>
               <img
                 className="img-fluid"
-                src={require("../../assets/img/userab.png")}
+                src={require("../../assets/img/about/abt.png")}
                 alt="banner"
               />
               </div>
@@ -128,7 +128,7 @@ const AboutUs = () => {
       </section> */}
 
       <WhatWeDoSec/>
-      <OurClientCarousel/>
+      {/* <OurClientCarousel/> */}
       
       
     </>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9cd41ba2.css",
-    "main.js": "/static/js/main.54b8f0fa.js",
+    "main.js": "/static/js/main.9446e27d.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
     "static/media/home_banner.png": "/static/media/home_banner.1976a01757395b9f8db6.png",
     "static/media/team.png": "/static/media/team.e6e4ee0d5f9cccd2a679.png",
@@ -17,7 +17,6 @@
     "static/media/ourteamBG.png": "/static/media/ourteamBG.760cc71766d1a455a0ec.png",
     "static/media/team3.png": "/static/media/team3.f798c5d13858e8d16fb4.png",
     "static/media/Biometrics.png": "/static/media/Biometrics.17a40aed5e07223f6609.png",
-    "static/media/userab.png": "/static/media/userab.aa5404390c948e53d5e6.png",
     "static/media/ClinicalOperations.png": "/static/media/ClinicalOperations.ea2a57d5c9956ea953db.png",
     "static/media/Drug.png": "/static/media/Drug.f92f14dc63b30e70a11d.png",
     "static/media/bgImg.png": "/static/media/bgImg.368ebcb0f82f20aa4825.png",
@@ -29,6 +28,7 @@
     "static/media/Qualitysecond.png": "/static/media/Qualitysecond.26c69400ab3f4194d74c.png",
     "static/media/Drugsecond.png": "/static/media/Drugsecond.c05285f26a9ce7c3e721.png",
     "static/media/Biometricssecond.png": "/static/media/Biometricssecond.b552644d21a14f215074.png",
+    "static/media/abt.png": "/static/media/abt.539cf49655df2ebf1070.png",
     "static/media/servicesTwo.png": "/static/media/servicesTwo.3fe8479739917a91d236.png",
     "static/media/team1.png": "/static/media/team1.7722183d8b3baad72764.png",
     "static/media/teamthree.png": "/static/media/teamthree.1c319a51cacc96bee41a.png",
@@ -66,11 +66,11 @@
     "static/media/arrow_right.svg": "/static/media/arrow_right.e94d892577b963068011.svg",
     "static/media/arrow_left.svg": "/static/media/arrow_left.66cd9605abccb92e88df.svg",
     "main.9cd41ba2.css.map": "/static/css/main.9cd41ba2.css.map",
-    "main.54b8f0fa.js.map": "/static/js/main.54b8f0fa.js.map",
+    "main.9446e27d.js.map": "/static/js/main.9446e27d.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9cd41ba2.css",
-    "static/js/main.54b8f0fa.js"
+    "static/js/main.9446e27d.js"
   ]
 }
