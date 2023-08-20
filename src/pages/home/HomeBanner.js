@@ -5,12 +5,7 @@ import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
 
 const HomeBanner = () => {
-  const dispatch= useDispatch();
 
-  const contactTypeHandle=(v)=>{
-    dispatch(contactType(v));
-  }
- 
   return (
     <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
       <img
@@ -36,8 +31,7 @@ const HomeBanner = () => {
                 <div className="d-flex">
                   <Link
                     className="btnTheme bgGreen mr12 fMedium btnMob"
-                    to="mailto:admin@alamoprimarycare.com"
-                    onClick={()=>contactTypeHandle("talent")}
+                    to="/contact-us"
                   >
                     Contact Us
                   </Link>

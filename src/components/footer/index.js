@@ -147,7 +147,7 @@ const Footer = () => {
               
               <li>
                 <Link
-                  to="mailto:admin@alamoprimarycare.com"
+                  to="/contact-us"
                   className="colorWhite fs15 fRegular itemLightwhite"
                 >
               Contact Us
@@ -161,13 +161,8 @@ const Footer = () => {
              Locate us
             </h3>
            
-            <a href="https://maps.app.goo.gl/yNpYw9E1DP481WEu5" target="_blank">
-              <img
-                className="img-fluid radius10 "
-                src={require("../../assets/img/Regulatory.png")}
-                alt="logo"
-              />
-            </a>
+
+            <iframe className="w-100 radius" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.929341217516!2d-98.73212219999999!3d29.4308615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c4341b9ac9cd5%3A0x96849cc9ca8f19a9!2sAlamo%20Primary%20Care!5e0!3m2!1sen!2sin!4v1692448288032!5m2!1sen!2sin" height="230" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
        
           </Col>
