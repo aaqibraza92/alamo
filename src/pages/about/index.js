@@ -24,7 +24,7 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Alamo </title>
+        <title>About Us - Alamo Primary Care </title>
       </Helmet>
       <BreadCrumb
         // subTitle="Welcome to Alamo Primary Care"

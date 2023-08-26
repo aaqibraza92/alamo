@@ -97,10 +97,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{locationSvg}</span>
                   <a
-                    href="tel:848-666-0101"
-                    className="colorWhite fs15 fRegular itemLightwhite"
+                    href="https://goo.gl/maps/ByFg1ZhGJvtVedkX7" 
+                    className="colorWhite fs15 fRegular itemLightwhite" target="_blank"
                   >
-              12047 Potranco Rd Ste 105, San Antonio, TX 78253, United States
+                  12047 Potranco Rd Ste 105, San Antonio, TX 78253, United States
                   </a>
                 </div>
               </li>

@@ -6,7 +6,8 @@ import { Col, Container, Row } from "reactstrap";
 const OurServices = () => {
   var SliderSettings = {
     dots: false,
-    arrows: true,
+    arrows: false,
+    loop:true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -249,6 +250,52 @@ const OurServices = () => {
                     </h4>
                     <p className="colorWhite fs15 fw400 mb20">
                     Chronic disease management services play a significant role in reducing healthcare costs,
+                    </p>
+                    <div className="mt40">
+                      <Link
+                        className="btnTheme btnWhite fw600 fs16 pt15 pb15 mr12 fMedium btnMob"
+                        to="/services"
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+
+<div className="pl10 pr10">
+<div className="radius10 position-relative mainSerWrap transition">
+              <img
+                src={require("../../assets/img/procedures.png")}
+                className="w-100 radius10"
+                alt=""
+              />
+              <div className="w-100 default radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pb30 pr30 transition">
+                <div className="h-100 d-flex align-items-end">
+                  <div className="text-start pb20">
+                    <div className="mb20">
+                      <img src={require("../../assets/img/medkit.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600">
+                    In-office <br></br> procedures
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="w-100 onHover radius10 blueGrd posUp position-absolute h-100 d-flex flex-column pl30 pr30 transition">
+                <div className="h-100 d-flex align-items-center">
+                  <div className="text-start">
+                    <div className="mb20">
+                      <img src={require("../../assets/img/medkit.png")} alt="" />
+                    </div>
+                    <h4 className="colorWhite fs24 fw600 mb20">
+                    In-office <br></br> procedures
+                    </h4>
+                    <p className="colorWhite fs15 fw400 mb20">
+                    In-office procedures are typically non-invasive or minimally invasive, requiring only local anaesthesia or sedation, ensuring patient comfort.
                     </p>
                     <div className="mt40">
                       <Link

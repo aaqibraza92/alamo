@@ -42,6 +42,10 @@ let data=[
         title: "Geriatric care ",
         content: "It's important to tailor geriatric care to each person's unique needs and circumstances. The specific services needed will depend on the individual's health status, level of independence, and personal preferences."
     },
+    {
+        img: require('../../assets/img/service/medkit.png'),
+        title: "In-office procedures",
+        content: "In-office procedures are typically non-invasive or minimally invasive, requiring only local anaesthesia or sedation, ensuring patient comfort. Common examples include dental cleanings, biopsies, skin lesion removals, and minor surgeries like vasectomies or colonoscopies. These offer several advantages, including convenience, reduced costs, and shorter recovery times compared to hospital-based treatments. At Alamo Primary Care, we offer efficient and accessible in-office procedures, from the hands of expert professionals who perform well-analysed treatments that enable individuals to return to their daily routines more swiftly."},
    
 
 ];
@@ -50,7 +54,7 @@ const Service = () => {
   return (
     <div>
          <Helmet>
-        <title>Services - Alamo</title>
+        <title>Services - Alamo Primary Care</title>
       </Helmet>
       <BreadCrumb
         // subTitle="Welcome to Alamo Primary Care"
@@ -102,7 +106,7 @@ const Service = () => {
         buttonName1="New-Patient-Registration"
         buttonName2="Book Appointment"
         link1="/contact-us"
-        link2="/#"
+        link2="/contact-us"
         bgImg={require('../../assets/img/bgImg.png')}
         />
     </div>

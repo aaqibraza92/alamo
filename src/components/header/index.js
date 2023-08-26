@@ -42,6 +42,7 @@ const Header = () => {
   }, []);
   return (
     <header className={`transition`}>
+      
       <div id="myNav" className={`overlay`}>
         <button id='closeMenu' className="closebtn noBtn" >
           {closeIcon}
@@ -79,11 +80,11 @@ const Header = () => {
                         </p>
                         <p className="fw400 fs15 colorGrey mb0">
                         Monday to Friday, <br/>
-8:00 am - 5:00 pm
+                        8:00 am - 5:00 pm
                         </p>
                     
                       </div>
-                        <Link href="tel:210-571-1338" className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span>  210-571-1338</Link>
+                        <a href="tel:210-571-1338" className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span>210-571-1338</a>
                         <a href="https://www.healowpay.com/HealowPay/jsp/healow/login.jsp" target="_blank" className="btnTheme bgGreen  fMedium btnMob fw500 mr12">Pay Online </a>
                         <Link to="https://mycw192.ecwcloud.com/portal24523/jsp/100mp/login_otp.jsp" target="_blank" className="btnTheme bgBlue  mr12 fMedium btnMob fw500">Patient Portal</Link>
                         <Link to="/contact-us" className="btnTheme bgGreen mr0 fMedium btnMob fw500">Book Appointment </Link>

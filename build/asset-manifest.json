@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cd41ba2.css",
-    "main.js": "/static/js/main.9446e27d.js",
+    "main.css": "/static/css/main.26eb7706.css",
+    "main.js": "/static/js/main.87aff09e.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
-    "static/media/home_banner.png": "/static/media/home_banner.1976a01757395b9f8db6.png",
+    "static/media/home_banner.png": "/static/media/home_banner.e883f67e2f4eb689a2b4.png",
     "static/media/team.png": "/static/media/team.e6e4ee0d5f9cccd2a679.png",
     "static/media/service_hero.png": "/static/media/service_hero.165a1d492b0ffdb6a6ff.png",
     "static/media/hero_team.png": "/static/media/hero_team.03725b4b2e362d67d349.png",
     "static/media/testi.jpg": "/static/media/testi.e2048f95c81623e5d383.jpg",
     "static/media/tailored.png": "/static/media/tailored.17867c94987236088c99.png",
     "static/media/hero_about.png": "/static/media/hero_about.086fc45c92a4b2432925.png",
+    "static/media/procedures.png": "/static/media/procedures.003fa5efe162177dfc80.png",
     "static/media/contactus.png": "/static/media/contactus.ebf655039bf5fb21f753.png",
     "static/media/Preclinical.png": "/static/media/Preclinical.94192454d00319450cf6.png",
     "static/media/area_bg.jpg": "/static/media/area_bg.e7ccaa073f40e0f1e4df.jpg",
@@ -61,16 +62,16 @@
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/arrow_right.svg": "/static/media/arrow_right.e94d892577b963068011.svg",
     "static/media/arrow_left.svg": "/static/media/arrow_left.66cd9605abccb92e88df.svg",
-    "main.9cd41ba2.css.map": "/static/css/main.9cd41ba2.css.map",
-    "main.9446e27d.js.map": "/static/js/main.9446e27d.js.map",
+    "main.26eb7706.css.map": "/static/css/main.26eb7706.css.map",
+    "main.87aff09e.js.map": "/static/js/main.87aff09e.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cd41ba2.css",
-    "static/js/main.9446e27d.js"
+    "static/css/main.26eb7706.css",
+    "static/js/main.87aff09e.js"
   ]
 }

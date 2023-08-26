@@ -22,7 +22,7 @@ const HomeBanner = () => {
                 Welcome to Alamo Primary Care
                 </p>
                 <h1 className="fs50 fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorBlue ml0">
-                Comprehensive 
+                Compassionate 
                 Primary Care 
                 Services for a 
                 Healthier You
