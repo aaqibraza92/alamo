@@ -15,7 +15,7 @@ import SingleTeam from "../../pages/OurTeam/SingleTeam";
 import PreclinicalScientific from "../../pages/home/services/PreclinicalScientific";
 import ContactUs from "../../pages/contact-us";
 import Blogs from "../../pages/blogs";
-import CoreValues from "../../pages/Core-values";
+// import CoreValues from "../../pages/Core-values";
 import ClinicalOperations from "../../pages/home/services/ClinicalOperations";
 import Biometrics from "../../pages/home/services/Biometrics";
 import RegulatoryAffairs from "../../pages/home/services/RegulatoryAffairs";
@@ -29,6 +29,7 @@ import BlogSingle from "../../pages/blogs/BlogSingle";
 import BlogCategory from "../../pages/Category";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import Service from "../../pages/services";
+import Thankyou from "../../pages/thank-you";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -75,8 +76,8 @@ let RouterList = [
     isAdmin: false,
   },
   {
-    element: <GetRoute isprivate={false} role="Default" page={CoreValues} />,
-    path: "/core-values",
+    element: <GetRoute isprivate={false} role="Default" page={Thankyou} />,
+    path: "/thank-you",
     isAdmin: false,
   },
   {

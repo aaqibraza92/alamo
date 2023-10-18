@@ -6,6 +6,12 @@
     border-radius: 12px;
     transition: all 0.5s;
   }
+  .thankBox {
+    color: #fff;
+    border-radius: 8px;
+    background: rgb(42,51,121);
+    background: linear-gradient(0deg, rgba(42,51,121,1) 0%, rgba(85,175,77,1) 100%);
+  }
   .wrapperArea:hover {
     border-color: var(--colorGreen);
   }
