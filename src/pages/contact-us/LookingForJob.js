@@ -6,6 +6,7 @@ import axios from "axios";
 import { CONTACT_FORM } from "../../helpers/apiurls";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useNavigate } from "react-router-dom";
 
 const LookingForJob = () => {
   const [firstName, setfirstName] = useState("");
@@ -20,12 +21,9 @@ const LookingForJob = () => {
   const [policyEmployer, setpolicyEmployer] = useState("");
   // const [term1, setterm1] = useState(false);
   const [term2, setterm2] = useState(false);
-  const [status,setStatus]= useState(false);
+  const [status, setStatus] = useState(false);
   const notify = (v) => toast(v);
-
-  console.log();
-
-
+  const navigate = useNavigate();
 
   const clearfeilds = () => {
     setfirstName("");
@@ -37,7 +35,7 @@ const LookingForJob = () => {
     setholderName("");
     setdob("");
     setpolicyNumber("");
-    setpolicyEmployer("")
+    setpolicyEmployer("");
   };
   const [validations, setValidations] = React.useState({
     first_name: "",
@@ -64,7 +62,7 @@ const LookingForJob = () => {
       dob: "",
       policyNumber: "",
       policyEmployer: "",
-      term2: false
+      term2: false,
     };
     let isValid = true;
 
@@ -131,7 +129,6 @@ const LookingForJob = () => {
   };
 
   const onSubmitHandler = (e) => {
-    
     e.preventDefault();
     const isValid = validateAll();
     if (!isValid) {
@@ -151,7 +148,6 @@ const LookingForJob = () => {
     iData.append("Holders_SS", policyNumber);
     iData.append("Holder_Employer", policyEmployer);
 
-
     const options = {
       method: "POST",
       headers: {
@@ -165,6 +161,7 @@ const LookingForJob = () => {
         clearfeilds();
         setStatus(false);
         notify(res?.data?.message);
+        navigate("/thank-you");
       }
     });
   };
@@ -418,7 +415,7 @@ const LookingForJob = () => {
                 type="submit"
                 className="noBtn fs25 fw700 bgBlue btnTheme w-50"
               >
-               {status ? "Sending..." : "Submit Now"} 
+                {status ? "Sending..." : "Submit Now"}
               </button>
             </div>
           </Col>
