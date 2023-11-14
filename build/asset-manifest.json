@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6886a079.css",
-    "main.js": "/static/js/main.c5beb9d3.js",
+    "main.css": "/static/css/main.fd6d287b.css",
+    "main.js": "/static/js/main.b25fdccb.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
     "static/media/home_banner.png": "/static/media/home_banner.e883f67e2f4eb689a2b4.png",
     "static/media/team.png": "/static/media/team.e6e4ee0d5f9cccd2a679.png",
@@ -13,12 +13,12 @@
     "static/media/contactus.png": "/static/media/contactus.ebf655039bf5fb21f753.png",
     "static/media/Preclinical.png": "/static/media/Preclinical.94192454d00319450cf6.png",
     "static/media/area_bg.jpg": "/static/media/area_bg.e7ccaa073f40e0f1e4df.jpg",
-    "static/media/clinic.jpg": "/static/media/clinic.229388d7095e3ab161c5.jpg",
     "static/media/ourteamBG.png": "/static/media/ourteamBG.760cc71766d1a455a0ec.png",
     "static/media/Biometrics.png": "/static/media/Biometrics.17a40aed5e07223f6609.png",
     "static/media/ClinicalOperations.png": "/static/media/ClinicalOperations.ea2a57d5c9956ea953db.png",
     "static/media/Drug.png": "/static/media/Drug.f92f14dc63b30e70a11d.png",
     "static/media/bgImg.png": "/static/media/bgImg.368ebcb0f82f20aa4825.png",
+    "static/media/clinic.jpg": "/static/media/clinic.1b3ca95b460517419a64.jpg",
     "static/media/Medical.png": "/static/media/Medical.b2ec3f0418c55dd31902.png",
     "static/media/Validation.png": "/static/media/Validation.005c392e8fc12ee128f2.png",
     "static/media/Preclinicalsecond.png": "/static/media/Preclinicalsecond.c54f6d443a2e38f097c4.png",
@@ -46,23 +46,23 @@
     "static/media/jersey.png": "/static/media/jersey.4f9ecbb782d7cb3c7bc5.png",
     "static/media/main_logo.png": "/static/media/main_logo.29ec7aa81850b6a97ebc.png",
     "static/media/user2.jpg": "/static/media/user2.0016c5cb3506c6698e4b.jpg",
-    "static/media/s3.svg": "/static/media/s3.2f269a4ec837d5aef418649a3706ed9e.svg",
-    "static/media/bag.svg": "/static/media/bag.2545df30f969473bfa087ad8736e17cf.svg",
-    "static/media/s2.svg": "/static/media/s2.40acee34835ded8f927d10fa9a4fcf1c.svg",
-    "static/media/s1.svg": "/static/media/s1.0c60e84f7da96739c4458834a46add72.svg",
+    "static/media/s3.svg": "/static/media/s3.b635cbe933c2ce4131cc223c71d0f8e5.svg",
+    "static/media/bag.svg": "/static/media/bag.9605d51ed9338f61a199bf62f2d5b7c1.svg",
+    "static/media/s2.svg": "/static/media/s2.2e4a606db1a3d6415a576fe32df9c43a.svg",
+    "static/media/s1.svg": "/static/media/s1.ce77b5e97391002a876e753dc9263c19.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/arrow_right.svg": "/static/media/arrow_right.e94d892577b963068011.svg",
-    "static/media/arrow_left.svg": "/static/media/arrow_left.66cd9605abccb92e88df.svg",
-    "main.6886a079.css.map": "/static/css/main.6886a079.css.map",
-    "main.c5beb9d3.js.map": "/static/js/main.c5beb9d3.js.map",
+    "static/media/arrow_right.svg": "/static/media/arrow_right.a4f6dad4a9ca8105997f.svg",
+    "static/media/arrow_left.svg": "/static/media/arrow_left.da457baf95cbd2a9f13c.svg",
+    "main.fd6d287b.css.map": "/static/css/main.fd6d287b.css.map",
+    "main.b25fdccb.js.map": "/static/js/main.b25fdccb.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6886a079.css",
-    "static/js/main.c5beb9d3.js"
+    "static/css/main.fd6d287b.css",
+    "static/js/main.b25fdccb.js"
   ]
 }
