@@ -297,8 +297,8 @@ const LookingForJob = () => {
             </div>
           </Col>
           <Col lg={4} md={4}>
-            <div className="mb25">
-              <DatePicker
+            <div className="mb25 mobMt10 position-relative">
+              {/* <DatePicker
                 selected={dob}
                 onChange={(dob) => setdob(dob)}
                 dateFormat="yyyy-M-dd"
@@ -306,8 +306,18 @@ const LookingForJob = () => {
                 name="dob"
                 locale="es"
                 placeholderText="Policy holder’s DOB*"
+              /> */}
+              <small className="phd position-absolute">
+              Policy holder’s DOB*
+              </small>
+  <input
+                type="date"
+                className="inputTheme w-100"
+                placeholder="Policy holder’s DOB*"
+                onChange={(e) => setdob(e.target.value)}
+                value={dob}
+                name="dob"
               />
-
               {validations?.dob && (
                 <div className="validation">
                   {validations?.dob.replace("_", " ")}
