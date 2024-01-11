@@ -4,14 +4,15 @@ import BlogItems from "./blogItems";
 import { Col, Container, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import '../../assets/css/blog.css'
-const Blogs = () => {
+const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Articles | Unicon</title>
+        <title>Blog | Alamo Primary Care</title>
       </Helmet>
       <BreadCrumb
-        title="Articles"
+        title="Blog"
+        bgImage={require("../../assets/img/about/hero_about.png")}
         items={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/blogs" },
@@ -29,4 +30,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Blog;

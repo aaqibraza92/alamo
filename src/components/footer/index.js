@@ -138,7 +138,7 @@ const Footer = () => {
               </li>
               <li className="mb8">
                 <Link
-                  to="/#"
+                  to="/blog"
                   className="colorWhite fs15 fRegular itemLightwhite"
                 >
                Blog

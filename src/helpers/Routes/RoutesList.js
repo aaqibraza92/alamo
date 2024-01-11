@@ -30,6 +30,7 @@ import BlogCategory from "../../pages/Category";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import Service from "../../pages/services";
 import Thankyou from "../../pages/thank-you";
+import Blog from "../../pages/blogs";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -91,8 +92,8 @@ let RouterList = [
     isAdmin: false,
   },
   {
-    element: <GetRoute isprivate={false} role="Default" page={Blogs} />,
-    path: "/blogs",
+    element: <GetRoute isprivate={false} role="Default" page={Blog} />,
+    path: "/blog",
     isAdmin: false,
   },
   {

@@ -142,7 +142,7 @@ const truncateHTML = (content, limit) => {
         
               </Col>
               <Col lg={4} md={12}>
-                <div className="mb30">
+                {/* <div className="mb30">
                 <input
                   type="text"
                   className="inputTheme w-100"
@@ -153,23 +153,23 @@ const truncateHTML = (content, limit) => {
                   Search
                 </button>
                 </div>
-                </div>
+                </div> */}
             
   
                 <div className="insight radius12 mb30">
-              <h4 className="fs20 colorBlue fBold pt20 pb20 pl20 pr20 mb0 borderBottom">
-              Insights
-              </h4>
-              <ul className="catUl pt20 pb20 pl20 pr20 ">
-              {
-                allCategory.length > 0 && allCategory.map((e,i)=>(
-                  e.name!=='Uncategorized' &&
-                  <li key={i} className="mb10">
-                    <Link className="fs15 colorBlue" to={`/category/${e?.id}`}>{e?.name}</Link>
-                  </li>
-                ))
-              }
-              </ul>
+                <h4 className="fs20 colorBlue fBold pt20 pb20 pl20 pr20 mb0 borderBottom">
+                Insights
+                </h4>
+                <ul className="catUl pt20 pb20 pl20 pr20 ">
+                {
+                  allCategory.length > 0 && allCategory.map((e,i)=>(
+                    e.name!=='Uncategorized' &&
+                    <li key={i} className="mb10">
+                      <Link className="fs15 colorBlue" to={`/category/${e?.id}`}>{e?.name}</Link>
+                    </li>
+                  ))
+                }
+                </ul>
           
              
                 </div>

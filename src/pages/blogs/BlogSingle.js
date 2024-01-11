@@ -54,7 +54,7 @@ const BlogSingle = () => {
       <Helmet>
         <title>  {`${postData && postData?.title && postData?.title?.rendered}`} | Alamo Primary Care </title>
       </Helmet>
-      <section className="single_bg text-center bgcover d-flex align-items-center justify-content-center pt80 flex-wrap position-relative">
+      <section className=" text-center bgcover d-flex align-items-center justify-content-center pt80 flex-wrap position-relative">
         <div className="contentArea">
           <Row className="justify-content-center">
             <Col lg={8}>
@@ -74,10 +74,11 @@ const BlogSingle = () => {
 
         <div className="mt36 mb40 singleImg w-100">
           <Container>
-
+          <Row className="justify-content-center">
+            <Col lg={10}>
             <div className="mb15">
               <img
-                className="radius12 w-100"
+                className="radius12 w-100 featureimag"
                 src={
                   postData?.x_featured_media_original
                     ? postData?.x_featured_media_original
@@ -87,9 +88,9 @@ const BlogSingle = () => {
               />
             </div>
 
-            <div className="mb15" dangerouslySetInnerHTML={{ __html: postData && postData?.content?.rendered }} />
-
-
+            <div className="mb15 text-start headingcolor" dangerouslySetInnerHTML={{ __html: postData && postData?.content?.rendered }} />
+            </Col>
+         </Row>
           </Container>
         </div>
       </section>

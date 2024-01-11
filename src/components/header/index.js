@@ -167,7 +167,7 @@ const Navbar = (props) => {
         </Link>
       </li>
       <li>
-        <Link to="/#" className="colorWhite clickToClose">
+        <Link to="/blog" className="colorWhite clickToClose">
        Blog 
         </Link>
       </li>
