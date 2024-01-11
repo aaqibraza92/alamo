@@ -93,6 +93,14 @@ const BlogItems = () => {
     });
   };
 
+
+const truncateHTML = (content, limit) => {
+  const words = content.split(' ');
+  const truncatedWords = words.slice(0, limit);
+  return truncatedWords.join(' ');
+};
+
+
   return (
     <>
           {loading && (
@@ -124,8 +132,7 @@ const BlogItems = () => {
                   </div>
                   <div className="overlaypText radius text-start pt20 pb20 pl20 pr20">
                     <h3 className="lh24" title={postData?.[0]?.title?.rendered}>   <Link to={`/blog/${postData?.[0]?.slug}`} className="fs18 fBold colorBlue"> {postData?.[0]?.title?.rendered.slice(0,33)} ... </Link></h3>
-                  
-                    <div className="mt8 colorPara" dangerouslySetInnerHTML={{ __html: postData?.[0]?.excerpt?.rendered }} />
+                    <div className="mt8 colorPara" dangerouslySetInnerHTML={{ __html:  truncateHTML(postData && postData?.[0]?.content?.rendered, 25)  }} />
                     <div className="d-flex align-items-center">
                       <span>{timeIcon}</span> <span className="fs14 colorPara ml5">  {dateConverter(postData?.[0]?.modified)}</span>
                     </div>
@@ -189,7 +196,7 @@ const BlogItems = () => {
               <div className="text-start pt20 pb20 pl20 pr20">
                 <h3 className="lh24" title={e?.title?.rendered}>   <Link to={`/blog/${e?.slug}`} className="fs18 fBold colorBlue"> {e?.title?.rendered.slice(0,33)} ... </Link></h3>
               
-                <div className="mt8 colorPara" dangerouslySetInnerHTML={{ __html: e?.excerpt?.rendered }} />
+                <div className="mt8 colorPara" dangerouslySetInnerHTML={{ __html:  truncateHTML(e?.content?.rendered, 25)  }} />
                 <div className="d-flex align-items-center">
                   <span>{timeIcon}</span> <span className="fs14 colorPara ml5">  {dateConverter(e?.modified)}</span>
                 </div>
@@ -210,7 +217,7 @@ const BlogItems = () => {
             <div className="text-start pt20 pb20 pl20 pr20">
               <h3 className="lh24" title={e?.title?.rendered}>   <Link to={`/blog/${e?.slug}`} className="fs18 fBold colorBlue"> {e?.title?.rendered.slice(0,33)} ... </Link></h3>
             
-              <div className="mt8 colorPara" dangerouslySetInnerHTML={{ __html: e?.excerpt?.rendered }} />
+              <div className="mt8 colorPara" dangerouslySetInnerHTML={{ __html:  truncateHTML(e?.content?.rendered, 25)  }} />
               <div className="d-flex align-items-center">
                 <span>{timeIcon}</span> <span className="fs14 colorPara ml5">  {dateConverter(e?.modified)}</span>
               </div>

@@ -9,8 +9,8 @@ import "../../assets/css/blog.css";
 
 const BlogSingle = () => {
   const id = useParams();
-  const [postData, setPostData] = useState("");
-  const [acfData, setacfData] = useState("");
+  const [postData, setPostData] = useState({});
+  const [acfData, setacfData] = useState([]);
   const [loader, setloader] = useState(true);
   useEffect(() => {
     getAllPosts();
@@ -29,12 +29,14 @@ const BlogSingle = () => {
       .get(HOME_URL + BLOG_URL + "?slug=" + id?.slug, options)
       .then((res) => {
         if (res && res.status === 200) {
-          setPostData(res?.data?.[0]);
-          setacfData(
-            res?.data?.[0]?.acf === false
-              ? ""
-              : res?.data?.[0]?.acf?.blogs_data?.[0]?.repeater_for_paragraph
-          );
+
+            setPostData(res?.data?.[0]);
+          
+          // setacfData(
+          //   res?.data?.[0]?.acf.length < 0
+          //     ? []
+          //     : res?.data?.[0]?.acf?.blogs_data?.[0]?.repeater_for_paragraph
+          // );
           setloader(false);
         }
       });
@@ -50,7 +52,7 @@ const BlogSingle = () => {
   return (
     <>
       <Helmet>
-        <title> {postData && postData?.title?.rendered} | Unicon</title>
+        <title>  {`${postData && postData?.title && postData?.title?.rendered}`} | Alamo Primary Care </title>
       </Helmet>
       <section className="single_bg text-center bgcover d-flex align-items-center justify-content-center pt80 flex-wrap position-relative">
         <div className="contentArea">
@@ -71,17 +73,24 @@ const BlogSingle = () => {
         </div>
 
         <div className="mt36 mb40 singleImg w-100">
-          {/* <Container>
-            <img
-              className="radius12 w-100"
-              src={
-                postData?.x_featured_media_original
-                  ? postData?.x_featured_media_original
-                  : require("../../assets/img/placeholder.jpg")
-              }
-              alt={postData && postData?.title?.rendered}
-            />
-          </Container> */}
+          <Container>
+
+            <div className="mb15">
+              <img
+                className="radius12 w-100"
+                src={
+                  postData?.x_featured_media_original
+                    ? postData?.x_featured_media_original
+                    : require("../../assets/img/placeholder.jpg")
+                }
+                alt={postData && postData?.title?.rendered}
+              />
+            </div>
+
+            <div className="mb15" dangerouslySetInnerHTML={{ __html: postData && postData?.content?.rendered }} />
+
+
+          </Container>
         </div>
       </section>
 
@@ -94,7 +103,7 @@ const BlogSingle = () => {
           </div>
         )}
 
-        <Row className="justify-content-center mb50 mt50">
+        {/* <Row className="justify-content-center mb50 mt50">
           <Col lg={10}>
             {acfData.length > 0 &&
               acfData?.map((e, i) => {
@@ -113,9 +122,9 @@ const BlogSingle = () => {
 
    
           </Col>
-        </Row>
+        </Row> */}
 
-     
+
       </Container>
     </>
   );
