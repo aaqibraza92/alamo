@@ -22,16 +22,29 @@
 .pr60{
     padding-right: 60px;
 }
+.pt150 {padding-top : 150px }
+.pb150 {padding-bottom : 150px }
 /*spacing*/
 
 @media only screen and (max-width: 767px) {
+        .pt150 {padding-top : 90px }
+      .pb150 {padding-bottom : 280px }
       .pl30 {
         padding-left: 15px;
+      }
+      .pbnone{
+        padding-bottom: 0px;
       }
       .pt100 {
         padding-top: 50px;
       }
       .pb100 {
+        padding-bottom: 50px;
+      }
+      .pt120 {
+        padding-top: 50px;
+      }
+      .pb120 {
         padding-bottom: 50px;
       }
       .pr30 {

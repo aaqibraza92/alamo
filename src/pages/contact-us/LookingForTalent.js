@@ -67,63 +67,19 @@ const LookingForTalent = () => {
     <>
        <ToastContainer />
        <Row>
-      <Col lg={4} md={4}>
-        <div className="mb25">
-          <Select
-            classNamePrefix="themeSelect"
-            className="themeSelect"
-            options={[
-              { value: "New Jersey", label: "New Jersey" },
-              { value: "Boston", label: "Boston" },
-              { value: "Chicago", label: "Chicago" },
-              { value: "North Carolina", label: "North Carolina" }
-            ]}
-            value={nearOffice}
-            placeholder={<div>Choose your nearest office *</div>}
-            onChange={(e) => setnearOffice(e)}
-          />
-        </div>
-      </Col>
-      {/* <Col lg={4} md={4}>
-        <div className="mb25">
-          <input type="text" onChange={(e)=>settitle(e.target.value)} value={title} className="inputTheme w-100" placeholder="Title" />
-        </div>
-      </Col> */}
-      <Col lg={4} md={4}>
+
+       <Col lg={4} md={4}>
         <div className="mb25">
           <input
             type="text"
             className="inputTheme w-100"
-            placeholder="First Name *"
+            placeholder="Full Name *"
             onChange={(e)=>setfirstName(e.target.value)} 
             value={firstName}
           />
         </div>
       </Col>
-      <Col lg={4} md={4}>
-      <div className="mb25">
-          <input
-            type="text"
-            className="inputTheme w-100"
-            placeholder="Last Name *"
-            onChange={(e)=>setlname(e.target.value)} 
-            value={lname}
-          />
-        </div>
-    
-      </Col>
 
-      <Col lg={4} md={4}>
-      <div className="mb25">
-          <input
-            type="text"
-            className="inputTheme w-100"
-            placeholder="Company"
-            onChange={(e)=> setcompany(e.target.value)} 
-            value={company}
-          />
-        </div>
-      </Col>
       <Col lg={4} md={4}>
         <div className="mb25">
           <input
@@ -146,44 +102,78 @@ const LookingForTalent = () => {
           />
         </div>
       </Col>
+
+      <Col lg={4} md={4}>
+      <div className="mb25">
+          <input
+            type="text"
+            className="inputTheme w-100"
+            placeholder="House No. , Street *"
+            onChange={(e)=>setlname(e.target.value)} 
+            value={lname}
+          />
+        </div>
+    
+      </Col>
+      <Col lg={4} md={4}>
+      <div className="mb25">
+          <input
+            type="text"
+            className="inputTheme w-100"
+            placeholder="City / State *"
+            onChange={(e)=>setlname(e.target.value)} 
+            value={lname}
+          />
+        </div>
+    
+      </Col>
+
+      <Col lg={4} md={4}>
+        <div className="mb25">
+          <Select
+            classNamePrefix="themeSelect"
+            className="themeSelect"
+            options={[
+              { value: " Myers Cocktail", label: "Myers Cocktail" },
+              { value: "Ultimate Myers Cocktail", label: "Ultimate Myers Cocktail" },
+              { value: "Reboot", label: "Reboot" },
+              { value: "Recovery & Performance", label: "Recovery & Performance" },
+              { value: "Alleviate", label: "Alleviate" },
+              { value: "Immunity", label: "Immunity" },
+              { value: "Inner Beauty", label: "Inner Beauty" },
+              { value: "Pure Hydration", label: "Pure Hydration" }
+
+            ]}
+            value={nearOffice}
+            placeholder={<div>Choose IV therapy *</div>}
+            onChange={(e) => setnearOffice(e)}
+          />
+        </div>
+      </Col>
+      
+     
+
+     
       <Col lg={12} md={12}>
         <div className="mb25">
           <input
             type="text"
             className="inputTheme w-100"
-            placeholder="What are your recruitment needs? *"
+            placeholder="Any other information/concerns"
             onChange={(e)=> setmesage(e.target.value)} 
             value={mesage}
           />
         </div>
       </Col>
 
-      {/* <Col lg={4} md={4}>
-        <div className="mb25">
-          <Select
-            classNamePrefix="themeSelect"
-            className="themeSelect"
-            options={[
-              { value: "Permanent", label: "Permanent" },
-              { value: "Contract", label: "Contract" },
-              { value: "Not Sure", label: "Not Sure" }
-            ]}
-            value={empType}
-            placeholder={<div>Employment type *</div>}
-            onChange={(e) => setempType(e)}
-            //isMulti={true}
-          />
-        </div>
-      </Col> */}
+      
 
       <Col lg={12}>
-        <p className="fs14 colorPara mt27">
-        By registering, you confirm that you agree to the processing of your personal data as described in our  <Link to="/privacy-policy">privacy policy.</Link>
-        </p>
+       
 
-        <div className="mt30 d-flex justify-content-between">
+        <div className="text-center">
           <div></div>
-          <button onClick={onSubmitHandler} className="noBtn bgBlue btnTheme">Submit</button>
+          <button onClick={onSubmitHandler} className="  btnTheme Inria border10 bglandling fs20  letterspace1 w-50">Submit</button>
         </div>
       </Col>
     </Row>

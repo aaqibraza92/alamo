@@ -5,6 +5,9 @@
   h1,h2,h3,h4,h5,h6,.barlow{
     font-family: 'Barlow', sans-serif;
   }
+  .Inria{
+    font-family: 'Inria Sans', sans-serif;
+  }
 .breadCrumb{
 
 }
@@ -12,9 +15,99 @@
   background: url('./assets/img/single_bg.jpg');
 }
 
+.landingbanner {
+  background-image: url('./assets/img/mainweb.png');
+  background-position: center;
+  background-size: cover;
+}
+.landingbannernew {
+  background-image: url('./assets/img/secondlanding.png');
+  background-position: center;
+  background-size: cover;
+}
+.bgimagefirst{
+  background-image: url('./assets/img/bgfirst.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.bgbottomlanding {
+  background-image: url('./assets/img/brownbh.png');
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.shadowContentnew{
+  box-shadow: 0px 13px 22px 0px #00000040;
+}
+.bgColornew {
+  background-color: #c6844a;
+}
+.colorGrey1{
+  color: #474747;
+}
+.letterspace2 {
+  letter-spacing: 3px;
+}
+.letterspace1{
+  letter-spacing: 1px;
+}
+.bgcolorblue {
+  background-color: #56DCC6;
+}
+.bgcolorpink {
+  background-color: #FFA894;
+}
+.bgcolorgreen{
+  background-color: #D4CA3C;
+}
+.bgcolorlightb{
+  background-color: #50B4DE;
+}
+.bgcolorbluenew{
+  background-color: #9898FF;
+}
+.boxpadding {
+  padding: 85px 45px;
+  height: 437px;
+}
+
+
+.bgcolorpinknew{
+  background-color: #B681EC;
+}
+.bgcolorpinknewone{
+  background-color: #F088A8;
+}
+.bgcolorpinknewpure{
+  background-color: #47D0E2;
+}
+.ptland40 {
+  padding-top: 23px;
+}
+@media only screen and (max-width: 767px) {
+  .landingbanner {
+    background-image: url('./assets/img/mobilebannerlanding.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .boxpadding {
+    padding: 28px 10px;
+    height: 260px;
+    margin-bottom: 27px;
+  }
+  .boxpadding img {
+    width: 47px;
+  }
+  .ptland40 {
+    padding-top: 0px;
+  }
+  
+}
+
 .bgGradient{
 background: #f1faf4; /* Old browsers */
-background: -moz-linear-gradient(left,  #f1faf4 0%, #f7f3f3 100%); /* FF3.6-15 */
+background: -moz-linear-gradient(left,  #060606 0%, #f7f3f3 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  #f1faf4 0%,#f7f3f3 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  #f1faf4 0%,#f7f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1faf4', endColorstr='#f7f3f3',GradientType=1 ); /* IE6-9 */
@@ -44,14 +137,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1faf4', end
 a.line {
   text-decoration: underline !important;
 }
-@media only screen and (max-width: 767px) {
-  .mobMt10{
-    margin-top: 10px;
-  }
-  body .wrapperContact {
-    padding: 15px;
-  }
-}
+
 
 .inputTheme {
   border: 1px solid #D6D6D6;
