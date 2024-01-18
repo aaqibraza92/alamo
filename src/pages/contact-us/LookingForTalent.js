@@ -108,7 +108,7 @@ const LookingForTalent = () => {
           <input
             type="text"
             className="inputTheme w-100"
-            placeholder="House No. , Street *"
+            placeholder="Address *"
             onChange={(e)=>setlname(e.target.value)} 
             value={lname}
           />
