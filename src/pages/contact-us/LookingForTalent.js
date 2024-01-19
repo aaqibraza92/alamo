@@ -135,7 +135,7 @@ const LookingForTalent = () => {
             className="themeSelect"
             options={[
               { value: " Myers Cocktail", label: "Myers Cocktail" },
-              { value: "Ultimate Myers Cocktail", label: "Ultimate Myers Cocktail" },
+              { value: "Alamo Myers cocktail", label: "Alamo Myers cocktail" },
               { value: "Reboot", label: "Reboot" },
               { value: "Recovery & Performance", label: "Recovery & Performance" },
               { value: "Alleviate", label: "Alleviate" },

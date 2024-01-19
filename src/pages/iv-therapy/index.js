@@ -71,7 +71,7 @@ const Ivtherapy = () => {
                     alt="banner"
                     />
 
-                    <h3 className="Inria text-white pb-3 mobFs18">ULTIMATE <br></br> MYERS <br></br>  COCKTAIL</h3>
+                    <h3 className="Inria text-white pb-3 mobFs18">ALAMO <br></br> MYERS <br></br>  COCKTAIL</h3>
                     <p className="Inria text-white mobFs14">ULTIMATE IMMUNE SYSTEM BOOST NATURALLY</p>
                   </div>
                 </Col>
