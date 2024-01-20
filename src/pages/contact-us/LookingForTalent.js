@@ -5,8 +5,10 @@ import axios from "axios";
 import { CONTACT_FORM } from "../../helpers/apiurls";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const LookingForTalent = () => {
+  const navigate = useNavigate();
   const [loading, setloading] = useState(false);
   const [therepy, settherepy] = useState("");
   const [firstName, setfirstName] = useState("");
@@ -126,6 +128,7 @@ const LookingForTalent = () => {
         notify(res?.data?.message);
         setloading(false);
         clearVal()
+        navigate("/thank-you");
       }
     });
   };
