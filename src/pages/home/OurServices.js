@@ -202,9 +202,9 @@ const OurServices = () => {
                         <div className="mt40">
                           <Link
                             className="btnTheme btnWhite fw600 fs16 pt15 pb15 mr12 fMedium btnMob"
-                            to="/services"
+                            to={`${e?.acf?.custom_url ? e?.acf?.custom_url : "/services"}`}
                           >
-                            Read More
+                            Read More 
                           </Link>
                         </div>
                       </div>

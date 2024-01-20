@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
+import { HashLink } from 'react-router-hash-link';
 
 
 const HomeBanner = () => {
@@ -26,12 +27,10 @@ const HomeBanner = () => {
                         </p>
 
                         <div className="pt-3">
-                        <Link
-                            className="btnTheme Inria border10 bglandling fs20  letterspace1 mr12 fMedium btnMob"
-                            to="/contact-us"
-                        >
-                            BOOK APPOINTMENT
-                        </Link>
+                        <HashLink smooth to="#contactUs"       className="btnTheme Inria border10 bglandling fs20  letterspace1 mr12 fMedium btnMob">
+                        BOOK APPOINTMENT
+                        </HashLink>
+                  
                         </div>
                     </div>
                     </Col>

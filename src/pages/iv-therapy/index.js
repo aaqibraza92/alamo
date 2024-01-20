@@ -180,7 +180,7 @@ const Ivtherapy = () => {
       </div>
 
 
-      <section className="pt80 pb80 whatWeDo">
+      <section className="pt80 pb80 whatWeDo" id="contactUs">
       <div className="container-xl">
         <Row className="align-items-center">
           
