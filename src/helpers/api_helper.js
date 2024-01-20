@@ -10,7 +10,6 @@ const axiosApi = axios.create({
   baseURL: API_URL,
 });
 
-console.log("bear13",token);
 
 axiosApi.defaults.headers.common["Authorization"] = token
 

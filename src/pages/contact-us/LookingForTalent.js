@@ -8,11 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
 
 const LookingForTalent = () => {
-  const [nearOffice, setnearOffice] = useState("");
-  // const [title, settitle] = useState("");
+  const [therepy, settherepy] = useState("");
+ const [loading, setloading] = useState(false);
   const [firstName, setfirstName] = useState("");
-  const [lname, setlname] = useState("");
-  const [company, setcompany] = useState("");
+  const [address, setaddress] = useState("");
+  const [cityState, setcityState] = useState("");
   const [phone, setphone] = useState("");
   const [email, setemail] = useState("");
   const [mesage, setmesage] = useState("");
@@ -21,28 +21,26 @@ const LookingForTalent = () => {
 
   const onSubmitHandler = (e) => {
 
- 
-
     const clearfeilds=()=>{
-      setnearOffice('');
+      settherepy('');
       // settitle('');
       setfirstName('');
-      setlname('');
-      setcompany('');
+      setaddress('');
+      setcityState('');
       setphone('');
       setemail('');
       setmesage('');
       // setempType('');
     }
     const iData = new FormData();
-    iData.append("nearest_office", nearOffice.value);
+    iData.append("informationplaceholder", mesage);
     // iData.append("Title", title);
-    iData.append("FirstName", firstName);
-    iData.append("LastName", lname);
-    iData.append("company", company);
+    iData.append("First_Name", firstName);
+    iData.append("House_Name", address);
+    iData.append("citystate", cityState);
     iData.append("phone", phone);
-    iData.append("email", email);
-    iData.append("mesage", mesage);
+    iData.append("your-email", email);
+    iData.append("menu-684", therepy?.value);
     // iData.append("type", empType.value);
 
 
@@ -55,10 +53,13 @@ const LookingForTalent = () => {
       },
     };
 
-    axios.post(CONTACT_FORM + 100 + "/feedback", iData, options).then((res) => {
+    setloading(true)
+
+    axios.post(CONTACT_FORM + 109 + "/feedback", iData, options).then((res) => {
       if (res && res.status===200) {
         clearfeilds();
         notify(res?.data?.message);
+        setloading(false);
       }
     });
   };
@@ -67,7 +68,6 @@ const LookingForTalent = () => {
     <>
        <ToastContainer />
        <Row>
-
        <Col lg={4} md={4}>
         <div className="mb25">
           <input
@@ -109,8 +109,8 @@ const LookingForTalent = () => {
             type="text"
             className="inputTheme w-100"
             placeholder="Address *"
-            onChange={(e)=>setlname(e.target.value)} 
-            value={lname}
+            onChange={(e)=>setaddress(e.target.value)} 
+            value={address}
           />
         </div>
     
@@ -121,8 +121,8 @@ const LookingForTalent = () => {
             type="text"
             className="inputTheme w-100"
             placeholder="City / State *"
-            onChange={(e)=>setlname(e.target.value)} 
-            value={lname}
+            onChange={(e)=>setcityState(e.target.value)} 
+            value={cityState}
           />
         </div>
     
@@ -144,9 +144,9 @@ const LookingForTalent = () => {
               { value: "Pure Hydration", label: "Pure Hydration" }
 
             ]}
-            value={nearOffice}
+            value={therepy}
             placeholder={<div>Choose IV therapy *</div>}
-            onChange={(e) => setnearOffice(e)}
+            onChange={(e) => settherepy(e)}
           />
         </div>
       </Col>
@@ -172,8 +172,7 @@ const LookingForTalent = () => {
        
 
         <div className="text-center">
-          <div></div>
-          <button onClick={onSubmitHandler} className="  btnTheme Inria border10 bglandling fs20  letterspace1 w-50">Submit</button>
+          <button onClick={onSubmitHandler} className="  btnTheme Inria border10 bglandling fs20  letterspace1 w-50">{loading ? "Submitting..." : "Submit"}</button>
         </div>
       </Col>
     </Row>
