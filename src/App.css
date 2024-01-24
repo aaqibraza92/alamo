@@ -85,6 +85,9 @@
 .ptland40 {
   padding-top: 23px;
 }
+.wcustom {
+  width: 70px;
+}
 @media only screen and (max-width: 767px) {
   .landingbanner {
     background-image: url('./assets/img/mobilebannerlanding.png');

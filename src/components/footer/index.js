@@ -84,10 +84,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{envelopSvg}</span>
                   <a
-                    href="mailto:admin@alamoprimarycare.com"
+                    href="mailto:manager@alamoprimarycare.com"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-                 admin@alamoprimarycare.com
+                 manager@alamoprimarycare.com
                   </a>
                 </div>
               </li>

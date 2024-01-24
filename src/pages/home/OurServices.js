@@ -178,7 +178,7 @@ const OurServices = () => {
                     <div className="h-100 d-flex align-items-end">
                       <div className="text-start pb20">
                         <div className="mb20">
-                          <img src={e?.acf?.icon_image?.sizes?.large} alt="" />
+                          <img  className="wcustom" src={e?.acf?.icon_image?.sizes?.large} alt="" />
                         </div>
                         <h4 className="colorWhite fs24 fw600">
                           {e?.title?.rendered}
@@ -193,7 +193,7 @@ const OurServices = () => {
                     <div className="h-100 d-flex align-items-center  transition">
                       <div className="text-start">
                         <div className="mb20">
-                          <img src={e?.acf?.icon_image?.sizes?.large} alt="" />
+                          <img className="wcustom" src={e?.acf?.icon_image?.sizes?.large} alt="" />
                         </div>
                         <h4 className="colorWhite fs24 fw600 mb20">
                           {e?.title?.rendered}
