@@ -156,7 +156,7 @@ const LookingForJob = () => {
       },
     };
 
-    axios.post(CONTACT_FORM + 8 + "/feedback", iData, options).then((res) => {
+    axios.post(CONTACT_FORM + 124 + "/feedback", iData, options).then((res) => {
       if (res && res.status === 200) {
         clearfeilds();
         setStatus(false);

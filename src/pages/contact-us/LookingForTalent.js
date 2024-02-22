@@ -122,7 +122,7 @@ const LookingForTalent = () => {
 
     setloading(true);
 
-    axios.post(CONTACT_FORM + 109 + "/feedback", iData, options).then((res) => {
+    axios.post(CONTACT_FORM + 125 + "/feedback", iData, options).then((res) => {
       if (res && res.status === 200) {
         clearfeilds();
         notify(res?.data?.message);
@@ -137,7 +137,6 @@ const LookingForTalent = () => {
     <>
       <ToastContainer />
       <Row>
-        {console.log("validations", validations)}
         <Col lg={4} md={4}>
           <div className="mb25">
             <input
@@ -272,7 +271,9 @@ const LookingForTalent = () => {
             
           </div>
         </Col>
-
+                      {
+                        console.log("therepy",therepy?.value)
+                      }
         <Col lg={12}>
           <div className="text-center">
             <button
