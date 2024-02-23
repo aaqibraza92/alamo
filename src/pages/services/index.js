@@ -130,25 +130,29 @@ const Service = () => {
                     </h4>
                     <div className="fs16 fw400 colorBlue" dangerouslySetInnerHTML={{ __html: e?.content?.rendered }} />
 
-                    <div className="d-flex">
-                  <Link
-                    className="btnTheme bgGreen mr12 fMedium btnMob"
-                    to="/iv-therapy"
-                  >
-                    Read More
-                  </Link>
-                </div>
+                    {
+                      e?.acf?.custom_url && <div className="d-flex">
+
+                        <Link
+                          className="btnTheme bgGreen mr12 fMedium btnMob"
+                          to={e?.acf?.custom_url}
+                        >
+                          Read More
+                        </Link>
+                      </div>
+                    }
+
                   </div>
                 </Col>
               ))
                 : <Row>
-                  <Col md={6}>  <div class="skeleton" style={{height: '300px'}}>  </div></Col>
-                  <Col md={6}>  <div class="skeleton" style={{height: '300px'}}>  </div></Col>
-                  <Col md={6}>  <div class="skeleton" style={{height: '300px'}}>  </div></Col>
-                  <Col md={6}>  <div class="skeleton" style={{height: '300px'}}>  </div></Col>
-                </Row> 
-              
-              
+                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
+                </Row>
+
+
             }
 
 
