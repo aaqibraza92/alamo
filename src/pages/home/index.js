@@ -13,7 +13,8 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Alamo Primary Care</title>
+        <title>Alamo Primary Care | Top Primary Care Services In Westover Hills, San Antonio</title>
+        <meta name="description" content="Alamo Primary Care offers premier primary healthcare services in Westover Hills, San Antonio. Our expert team provides personalized and comprehensive care to meet your unique needs. Schedule an appointment today for exceptional healthcare you can trust." />
       </Helmet>
     <main>
     <HomeBanner/>
