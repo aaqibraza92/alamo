@@ -141,29 +141,33 @@ const Navbar = (props) => {
         About Us 
         </Link>
       </li>
-      {/* <li>
-        <Link to="#" className="colorPara">
-          Our Story <span className="ml5 arrowDown">{angleDownIcon}</span>
-        </Link>
-        <ul className="subMenu">
-          <li>
-            <Link to="/about-us" className="clickToClose">About Us</Link>
-          </li>
-          <li>
-            <Link to="/what-we-do" className="clickToClose">What We Do</Link>
-          </li>
-          <li>
-            <Link to="/our-team" className="clickToClose">Our Team </Link>
-          </li>
-          <li>
-            <Link to="/core-values" className="clickToClose">Core Values </Link>
-          </li>
-        </ul>
-      </li> */}
+      
 
       <li>
         <Link to="/services" className="colorWhite clickToClose">
         Services 
+        </Link>
+      </li>
+
+      <li className="position-relative">
+        <Link to="#" className="colorWhite clickToClose">
+           Our Products <span className="ml5 arrowDown">{angleDownIcon}</span>
+        </Link>
+        <ul className="subMenu">
+          <li>
+            <Link to="https://biote.com/" target="_blank" className="clickToClose">Biote</Link>
+          </li>
+          <li>
+            <Link to="https://www.skinbetter.com/" target="_blank" className="clickToClose">SkinBetter</Link>
+          </li>
+          
+        </ul>
+      </li>
+
+      
+      <li>
+        <Link to="/#!" className="colorWhite clickToClose">
+        Our Doctor
         </Link>
       </li>
       <li>
@@ -171,11 +175,7 @@ const Navbar = (props) => {
        Blog 
         </Link>
       </li>
-      {/* <li>
-        <Link to="/#" className="colorWhite clickToClose">
-        Patient Portal 
-        </Link>
-      </li> */}
+
       <li>
         <Link to="/contact-us" className="colorWhite clickToClose">
         Contact Us
