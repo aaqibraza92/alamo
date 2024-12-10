@@ -155,10 +155,10 @@ const Navbar = (props) => {
         </Link>
         <ul className="subMenu">
           <li>
-            <Link to="https://biote.com/" target="_blank" className="clickToClose">Biote</Link>
+            <Link to="https://link.biote.info/wyu" target="_blank" className="clickToClose">Biote</Link>
           </li>
           <li>
-            <Link to="https://www.skinbetter.com/" target="_blank" className="clickToClose">SkinBetter</Link>
+            <Link to="https://skinbetter.pro/alamoprimarycare" target="_blank" className="clickToClose">SkinBetter</Link>
           </li>
           
         </ul>
@@ -166,7 +166,7 @@ const Navbar = (props) => {
 
       
       <li>
-        <Link to="/#!" className="colorWhite clickToClose">
+        <Link to="/our-team" className="colorWhite clickToClose">
         Our Doctor
         </Link>
       </li>

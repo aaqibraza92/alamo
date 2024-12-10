@@ -152,6 +152,10 @@
   fill: #fff !important;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 @media only screen and (max-width: 767px) {
   .landingbanner {
     background-image: url('./assets/img/mobilebannerlanding.png');
@@ -174,7 +178,7 @@
     font-size: 11px;
   }
   .boxpadding {
-    padding: 29px 10px;
+    padding: 29px 22px;
     height: 335px;
     margin-bottom: 27px;
   }
