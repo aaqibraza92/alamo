@@ -131,8 +131,20 @@ const Header = () => {
 export default Header;
 
 const Navbar = (props) => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const loadWindowWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    loadWindowWidth();
+    window.addEventListener("resize", loadWindowWidth);
+    return () => {
+      window.removeEventListener("resize", loadWindowWidth);
+    };
+  }, []);
   const [stickyHeader, setstickyHeader] = useState("");
   const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const [isActiveMenu1, setIsActiveMenu1] = useState(false);
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const isTop = window.scrollY;
@@ -150,6 +162,12 @@ const Navbar = (props) => {
       });
   }, []);
 
+  const scrollOffset=(v)=>{
+      const yOffset = -90; 
+      const y = v.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
   return (
     <div className={`navWrapper bgBlue mobileheader ${stickyHeader}`}>
       <Container>
@@ -165,11 +183,27 @@ const Navbar = (props) => {
             </Link>
           </li>
 
-          <li className="position-relative">
-            <Link to="#" className="colorWhite">
+          <li className={`${isActiveMenu ? "parentActive" : ""} position-relative`}>
+            <Link
+              onClick={
+                screenWidth < 1024 ? () => {setIsActiveMenu(!isActiveMenu); setIsActiveMenu1(false)} : null
+              }
+              to={screenWidth < 1024 ? "#" : "/services"}
+              className="colorWhite"
+            >
               Services <span className="ml5 arrowDown">{angleDownIcon}</span>
             </Link>
-            <ul className={`subMenu longMenu ${isActiveMenu}`}>
+            <ul
+              className={`subMenu longMenu ${isActiveMenu ? "activeMenu" : ""}`}
+            >
+              {screenWidth < 1024 && (
+                <li>
+                  <Link to="/services" className="clickToClose">
+                    All Services
+                  </Link>
+                </li>
+              )}
+
               <li>
                 <Link to="/weightloss-program" className="clickToClose">
                   Weightloss Program
@@ -185,6 +219,7 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service0"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
                   Chronic disease management
                 </HashLink>
@@ -194,8 +229,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service1"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-                Health screenings and diagnostic tests
+                  Health screenings and diagnostic tests
                 </HashLink>
               </li>
               <li>
@@ -203,8 +239,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service2"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-             Routine check-ups and preventive care
+                  Routine check-ups and preventive care
                 </HashLink>
               </li>
               <li>
@@ -212,8 +249,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service2"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-             Routine check-ups and preventive care
+                  Routine check-ups and preventive care
                 </HashLink>
               </li>
               <li>
@@ -221,8 +259,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service3"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-          In-office procedures
+                  In-office procedures
                 </HashLink>
               </li>
               <li>
@@ -230,8 +269,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service3"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-           Geriatric care
+                  Geriatric care
                 </HashLink>
               </li>
               <li>
@@ -239,8 +279,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service5"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-         Men’s Health Services
+                  Men’s Health Services
                 </HashLink>
               </li>
               <li>
@@ -248,8 +289,9 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service6"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-       Women’s Health Services
+                  Women’s Health Services
                 </HashLink>
               </li>
               <li>
@@ -257,20 +299,22 @@ const Navbar = (props) => {
                   smooth
                   to="/services#service8"
                   className="clickToClose"
+                  scroll={el => scrollOffset(el)}
                 >
-     Immunization and Vaccination
+                  Immunization and Vaccination
                 </HashLink>
               </li>
-             
             </ul>
           </li>
 
-          <li className="position-relative">
-            <Link to="#" className="colorWhite clickToClose">
+          <li className={`${isActiveMenu1 ? "parentActive" : ""} position-relative`}>
+            <Link   onClick={
+                screenWidth < 1024 ? () => {setIsActiveMenu1(!isActiveMenu1); setIsActiveMenu(false)} : null
+              } to="#" className="colorWhite">
               Our Products{" "}
               <span className="ml5 arrowDown">{angleDownIcon}</span>
             </Link>
-            <ul className="subMenu">
+            <ul  className={`subMenu ${isActiveMenu1 ? "activeMenu" : ""}`}>
               <li>
                 <Link
                   to="https://link.biote.info/wyu"
