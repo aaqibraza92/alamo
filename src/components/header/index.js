@@ -78,7 +78,7 @@ const Header = () => {
                         <p className="fw600 fs15 colorBlack mb0">
                         Hours Of Operation:
                         </p>
-                        <p className="fw400 fs15 colorGrey mb0">
+                        <p className="fw400 fs15  mb0">
                         Monday to Friday, <br/>
                         8:00 am - 5:00 pm
                         </p>
@@ -143,10 +143,21 @@ const Navbar = (props) => {
       </li>
       
 
-      <li>
+     
+      <li className="position-relative">
         <Link to="/services" className="colorWhite clickToClose">
-        Services 
+        Services <span className="ml5 arrowDown">{angleDownIcon}</span>
         </Link>
+        <ul className="subMenu">
+          <li>
+            <Link to="/weightloss-program"  className="clickToClose">Weightloss Program</Link>
+          </li>
+          <li>
+            <Link to="/iv-therapy"  className="clickToClose">IV Therapy</Link>
+          </li>
+         
+          
+        </ul>
       </li>
 
       <li className="position-relative">

@@ -23,8 +23,7 @@ import DrugSafetyPV from "../../pages/home/services/DrugSafetyPV";
 import MedicalAffairs from "../../pages/home/services/MedicalAffairs";
 import QualityCompliance from "../../pages/home/services/QualityCompliance";
 import Validation from "../../pages/home/services/Validation";
-import OpenIndustryJobs from "../../pages/open-industry-jobs";
-import UniconPharmaCareers from "../../pages/unicon-pharma-careers";
+import Weightlossprogram from "../../pages/weightloss-program";
 import BlogSingle from "../../pages/blogs/BlogSingle";
 import BlogCategory from "../../pages/Category";
 import PrivacyPolicy from "../../pages/privacyPolicy";
@@ -113,8 +112,8 @@ let RouterList = [
     isAdmin: false,
   },
   {
-    element: <GetRoute isprivate={false} role="Default" page={ClinicalOperations} />,
-    path: "/clinical-operations",
+    element: <GetRoute isprivate={false} role="Default" page={Weightlossprogram} />,
+    path: "/weightloss-program",
     isAdmin: false,
   },
   {
@@ -152,16 +151,8 @@ let RouterList = [
     path: "/contact-us",
     isAdmin: false,
   },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={OpenIndustryJobs} />,
-    path: "/open-industry-jobs",
-    isAdmin: false,
-  },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={UniconPharmaCareers} />,
-    path: "/unicon-pharma-careers",
-    isAdmin: false,
-  },
+  
+ 
   {
     element: <GetRoute isprivate={false} role="Default" page={PrivacyPolicy} />,
     path: "/privacy-policy",

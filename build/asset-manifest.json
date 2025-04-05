@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.06d456a4.css",
-    "main.js": "/static/js/main.abb7fd3f.js",
+    "main.css": "/static/css/main.67dfbbac.css",
+    "main.js": "/static/js/main.9296f4a3.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
     "static/media/home_banner.png": "/static/media/home_banner.e883f67e2f4eb689a2b4.png",
     "static/media/team.png": "/static/media/team.e6e4ee0d5f9cccd2a679.png",
@@ -31,12 +31,10 @@
     "static/media/abt.png": "/static/media/abt.539cf49655df2ebf1070.png",
     "static/media/servicesTwo.png": "/static/media/servicesTwo.3fe8479739917a91d236.png",
     "static/media/mainweb.png": "/static/media/mainweb.caa3a3362aacbde907fd.png",
+    "static/media/teambg.png": "/static/media/teambg.5563a9d49004bb471c66.png",
     "static/media/hero_team.png": "/static/media/hero_team.1b5771ebfdbdff531b7b.png",
     "static/media/secondlanding.png": "/static/media/secondlanding.258e8646c01239c3d123.png",
-    "static/media/DrVishalProfileImage.jpg": "/static/media/DrVishalProfileImage.03e9556ef9112974c42c.jpg",
     "static/media/Validationsecond.png": "/static/media/Validationsecond.85d095f195587966a8f1.png",
-    "static/media/Mask.png": "/static/media/Mask.d5c6fa4b3bfc54c93704.png",
-    "static/media/what_we.jpg": "/static/media/what_we.c8ba35419a7418c123c7.jpg",
     "static/media/single_bg.jpg": "/static/media/single_bg.6299f22ab1d681e1bf64.jpg",
     "static/media/BookAppointment.png": "/static/media/BookAppointment.08c2657e4e22d4532ee8.png",
     "static/media/t3.png": "/static/media/t3.0f471ce6ff27dce8f7f1.png",
@@ -50,12 +48,12 @@
     "static/media/clinicaloperations.jpg": "/static/media/clinicaloperations.d9ed91f5fb75f2469886.jpg",
     "static/media/jersey.png": "/static/media/jersey.4f9ecbb782d7cb3c7bc5.png",
     "static/media/main_logo.png": "/static/media/main_logo.29ec7aa81850b6a97ebc.png",
+    "static/media/DrVishalProfileImage.jpeg": "/static/media/DrVishalProfileImage.fd4db8de2cc1b72f11c0.jpeg",
     "static/media/brownbh.png": "/static/media/brownbh.6d32c4bcc9e75e50d583.png",
     "static/media/placeholder.jpg": "/static/media/placeholder.53d46b4cf8c56ab47609.jpg",
     "static/media/user2.jpg": "/static/media/user2.0016c5cb3506c6698e4b.jpg",
     "static/media/bgfirst.png": "/static/media/bgfirst.4d7fc5afb0bf0ea541f1.png",
     "static/media/s3.svg": "/static/media/s3.b635cbe933c2ce4131cc223c71d0f8e5.svg",
-    "static/media/bag.svg": "/static/media/bag.9605d51ed9338f61a199bf62f2d5b7c1.svg",
     "static/media/s2.svg": "/static/media/s2.2e4a606db1a3d6415a576fe32df9c43a.svg",
     "static/media/s1.svg": "/static/media/s1.ce77b5e97391002a876e753dc9263c19.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -65,12 +63,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/arrow_right.svg": "/static/media/arrow_right.a4f6dad4a9ca8105997f.svg",
     "static/media/arrow_left.svg": "/static/media/arrow_left.da457baf95cbd2a9f13c.svg",
-    "main.06d456a4.css.map": "/static/css/main.06d456a4.css.map",
-    "main.abb7fd3f.js.map": "/static/js/main.abb7fd3f.js.map",
+    "main.67dfbbac.css.map": "/static/css/main.67dfbbac.css.map",
+    "main.9296f4a3.js.map": "/static/js/main.9296f4a3.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06d456a4.css",
-    "static/js/main.abb7fd3f.js"
+    "static/css/main.67dfbbac.css",
+    "static/js/main.9296f4a3.js"
   ]
 }
