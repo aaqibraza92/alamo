@@ -271,9 +271,7 @@ const LookingForTalent = () => {
             
           </div>
         </Col>
-                      {
-                        console.log("therepy",therepy?.value)
-                      }
+                 
         <Col lg={12}>
           <div className="text-center">
             <button

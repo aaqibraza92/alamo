@@ -4,7 +4,6 @@ import { angleRight } from "../../assets/svg/Svg";
 import { Container } from "reactstrap";
 
 const BreadCrumb = (props) => {
-  console.log(props?.bgImage);
   return (
     <section style={{background: `url(${props?.bgImage})`}} className="breadCrumb bgcover d-flex align-items-center justify-content-start pt90 pb90">
       <Container>

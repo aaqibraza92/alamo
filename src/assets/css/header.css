@@ -6,6 +6,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .headerMenu > li > a {
   padding-left: 14px;
@@ -125,6 +126,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  body .subMenu.longMenu{
+    width: 100%;
+  }
   .img-fluid.mainLogo {
     width: 100px;
   }
@@ -263,4 +267,16 @@ img.img-fluid.mainLogo {
 }
 .topDown .headerMenu {
   height: 50px;
+}
+.subMenu.longMenu {
+  width: 360px !important;
+}
+.arrowDown {
+  width: 40px;
+}
+.activeMenu{
+    opacity: 1 !important;
+    transform: translate(0) !important;
+    visibility: visible !important;
+    z-index: 99 !important;
 }

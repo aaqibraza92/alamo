@@ -7,7 +7,7 @@ import WhatWeDo from "../home/WhatWeDo";
 import { Helmet } from "react-helmet";
 import axios from "axios";
 import { HOME_URL, SERVICE_URL } from "../../helpers/apiurls";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
 let data = [
   {
@@ -55,6 +55,18 @@ let data = [
 ];
 
 const Service = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   const [loading, setloading] = useState(false);
 
   const [postData, setPostData] = useState([]);
@@ -121,7 +133,7 @@ const Service = () => {
             {
               loading ? postData.length > 0 && postData.map((e, i) => (
                 <Col lg={6} md={6} key={i}>
-                  <div className="bgWhite pt40 pb40 pl30 pr30 minH hovers transition">
+                  <div className="bgWhite pt40 pb40 pl30 pr30 minH hovers transition" id={`service${i}`}>
                     <div className="mb30">
                       <img src={e?.acf?.icon_image?.sizes?.large} className="img-fluid" alt="" />
                     </div>
@@ -146,10 +158,10 @@ const Service = () => {
                 </Col>
               ))
                 : <Row>
-                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
-                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
-                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
-                  <Col md={6}>  <div class="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div className="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div className="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div className="skeleton" style={{ height: '300px' }}>  </div></Col>
+                  <Col md={6}>  <div className="skeleton" style={{ height: '300px' }}>  </div></Col>
                 </Row>
 
 

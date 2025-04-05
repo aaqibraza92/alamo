@@ -31,7 +31,6 @@ const OurServices = () => {
     await axios.get(`${HOME_URL + SERVICE_URL}?per_page=12&page=${currentPage}`, options).then((res) => {
       if (res && res.status === 200) {
         setPostData(res?.data);
-        console.log(res?.data);
         setloading(true);
         setTotalPage(res?.headers["x-wp-totalpages"]);
         setTotalCount(res?.headers["x-wp-total"]);
@@ -216,9 +215,9 @@ const OurServices = () => {
 
             ))
               : <>
-                <div class="skeleton" style={{ height: '300px' }}>  </div>
-                <div class="skeleton" style={{ height: '300px' }}>  </div>
-                <div class="skeleton" style={{ height: '300px' }}>  </div>
+                <div className="skeleton" style={{ height: '300px' }}>  </div>
+                <div className="skeleton" style={{ height: '300px' }}>  </div>
+                <div className="skeleton" style={{ height: '300px' }}>  </div>
               </>
 
 

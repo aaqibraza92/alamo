@@ -81,7 +81,7 @@ const OurTeam = () => {
 
                     <div className="fs18 fw400 colorBlue w-80 m-auto" dangerouslySetInnerHTML={{ __html: e?.content?.rendered }} />
 
-                    <div class="bglight radius10 p-3 mt20">
+                    <div className="bglight radius10 p-3 mt20">
                       <Row>
                         <Col md={6} className="justify-content-center d-flex mobilecontentstart mb5">
                           <div className="d-flex">
@@ -157,7 +157,7 @@ const OurTeam = () => {
                       <div className="fs18 fw400 colorBlue w-80 m-auto" dangerouslySetInnerHTML={{ __html: e?.content?.rendered }} />
 
 
-                      <div class="bglight radius10 p-3 mt20">
+                      <div className="bglight radius10 p-3 mt20">
                         <Row>
                           <Col md={6} className="justify-content-center d-flex mobilecontentstart mb5">
                             <div className="d-flex">
@@ -207,16 +207,16 @@ const OurTeam = () => {
         )) : <div className="container-xl mt80 mb80">
           <Row>
             <Col md={6}>
-              <div class="skeleton" style={{ height: '450px' }}>  </div>
+              <div className="skeleton" style={{ height: '450px' }}>  </div>
             </Col>
             <Col md={6}>
-              <div class="skeleton" style={{ height: '450px' }}>  </div>
+              <div className="skeleton" style={{ height: '450px' }}>  </div>
             </Col>
             <Col md={6}>
-              <div class="skeleton" style={{ height: '450px' }}>  </div>
+              <div className="skeleton" style={{ height: '450px' }}>  </div>
             </Col>
             <Col md={6}>
-              <div class="skeleton" style={{ height: '450px' }}>  </div>
+              <div className="skeleton" style={{ height: '450px' }}>  </div>
             </Col>
           </Row>
         </div>
