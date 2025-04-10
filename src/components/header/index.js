@@ -203,23 +203,25 @@ const Navbar = (props) => {
                   </Link>
                 </li>
               )}
+             
+             <li>
+                <Link to="/services#service0" className="clickToClose">
+                Telemedicine
+                </Link>
+              </li>
 
               <li>
                 <Link to="/weightloss-program" className="clickToClose">
                   Weightloss Program
                 </Link>
               </li>
-              <li>
-                <Link to="/iv-therapy" className="clickToClose">
-                  IV Therapy
-                </Link>
-              </li>
+              
               <li>
                 <HashLink
                   smooth
-                  to="/services#service0"
+                  to="/services#service1"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
                 >
                   Chronic disease management
                 </HashLink>
@@ -227,9 +229,9 @@ const Navbar = (props) => {
               <li>
                 <HashLink
                   smooth
-                  to="/services#service1"
+                  to="/services#service2"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
                 >
                   Health screenings and diagnostic tests
                 </HashLink>
@@ -237,39 +239,32 @@ const Navbar = (props) => {
               <li>
                 <HashLink
                   smooth
-                  to="/services#service2"
-                  className="clickToClose"
-                  scroll={el => scrollOffset(el)}
-                >
-                  Routine check-ups and preventive care
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/services#service2"
-                  className="clickToClose"
-                  scroll={el => scrollOffset(el)}
-                >
-                  Routine check-ups and preventive care
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
                   to="/services#service3"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
+                >
+                  Routine check-ups and preventive care
+                </HashLink>
+              </li>
+              
+              <li>
+                <HashLink
+                  smooth
+                  to="/services#service4"
+                  className="clickToClose"
+                  // scroll={el => scrollOffset(el)}
                 >
                   In-office procedures
                 </HashLink>
               </li>
+
+              
               <li>
                 <HashLink
                   smooth
-                  to="/services#service3"
+                  to="/services#service5"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
                 >
                   Geriatric care
                 </HashLink>
@@ -277,9 +272,9 @@ const Navbar = (props) => {
               <li>
                 <HashLink
                   smooth
-                  to="/services#service5"
+                  to="/services#service6"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
                 >
                   Men’s Health Services
                 </HashLink>
@@ -287,23 +282,61 @@ const Navbar = (props) => {
               <li>
                 <HashLink
                   smooth
-                  to="/services#service6"
+                  to="/services#service7"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
                 >
                   Women’s Health Services
                 </HashLink>
               </li>
               <li>
+                <Link to="/iv-therapy" className="clickToClose">
+                  IV Therapy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="https://link.biote.info/wyu"
+                  target="_blank"
+                  className="clickToClose"
+                >
+                  Biote
+                </Link>
+              </li>
+
+              <li>
                 <HashLink
                   smooth
-                  to="/services#service8"
+                  to="/services#service9"
                   className="clickToClose"
-                  scroll={el => scrollOffset(el)}
+                  // scroll={el => scrollOffset(el)}
                 >
                   Immunization and Vaccination
                 </HashLink>
               </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/services#service10"
+                  className="clickToClose"
+                  // scroll={el => scrollOffset(el)}
+                >
+                  Referrals to specialists
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/services#service11"
+                  className="clickToClose"
+                  // scroll={el => scrollOffset(el)}
+                >
+                 Acute care visits
+                </HashLink>
+              </li>
+             
+             
+
             </ul>
           </li>
 
