@@ -62,10 +62,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{callSvg}</span>
                   <a
-                    href="tel:210-571-1338"
+                    href="tel:210-571-1339"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-                    210-571-1338
+                    210-571-1339
                   </a>
                 </div>
               </li>
@@ -84,10 +84,10 @@ const Footer = () => {
                 <div className="d-flex">
                   <span className="mr12">{envelopSvg}</span>
                   <a
-                    href="mailto:manager@alamoprimarycare.com"
+                    href="mailto:admin@alamoprimarycare.com"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
-                 manager@alamoprimarycare.com
+                  admin@alamoprimarycare.com
                   </a>
                 </div>
               </li>
