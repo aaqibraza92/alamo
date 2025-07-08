@@ -79,14 +79,14 @@ const BlogItems = () => {
       },
     };
 
-    await axios.get(`${HOME_URL+BLOG_URL}?per_page=12&page=${currentPage}`, options).then((res) => {
+    await axios.get(`${HOME_URL+BLOG_URL}?per_page=18&page=${currentPage}`, options).then((res) => {
       if (res && res.status === 200) {
         setPostData(res?.data);
         setloading(false);
         setTotalPage(res?.headers["x-wp-totalpages"]);
         setTotalCount(res?.headers["x-wp-total"]);
         if (currentPage !== 1) {
-          navigation(`/blogs/?page=${currentPage}`);
+          navigation(`/blog/?page=${currentPage}`);
         }
 
       }
@@ -124,7 +124,7 @@ const truncateHTML = (content, limit) => {
                   <div className="featuredImg0">
                   <Link to={`/blog/${postData?.[0]?.slug}`}> 
                   <img
-                      src={postData?.[0]?.x_featured_media_large}
+                      src={postData?.[0]?.fimg_url}
                       className="img-fluid w-100 radius12"
                       alt=""
                     /></Link>
@@ -187,7 +187,7 @@ const truncateHTML = (content, limit) => {
             <div className="blogWrapper radius12 pb15 transition">
               <div className="featuredImg">
               <Link to={`/blog/${e?.slug}`}> <img
-                  src={e?.x_featured_media_medium}
+                  src={e?.fimg_url}
                   className="img-fluid w-100"
                   alt=""
                 /></Link>
