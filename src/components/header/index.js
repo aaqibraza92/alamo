@@ -416,6 +416,7 @@ const Navbar = (props) => {
 
 
 const NavbarMobile = (props) => {
+  const location=useLocation()
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const loadWindowWidth = () => {
     setScreenWidth(window.innerWidth);
@@ -445,7 +446,7 @@ const NavbarMobile = (props) => {
           document.getElementById("myNav").classList.remove("enableMobileMenu");
         });
       });
-  }, []);
+  }, [location]);
 
   const scrollOffset = (v) => {
     const yOffset = -90;
@@ -482,14 +483,11 @@ const NavbarMobile = (props) => {
               isActiveMenu && <ul
                 className={`subMenu longMenu ${isActiveMenu ? "activeMenu" : ""}`}
               >
-                {screenWidth < 1024 && (
-                  <li>
+                <li>
                     <Link to="/services" className="clickToClose">
                       All Services
                     </Link>
                   </li>
-                )}
-
                 <li>
                   <Link to="/services#service0" className="clickToClose">
                     Telemedicine
