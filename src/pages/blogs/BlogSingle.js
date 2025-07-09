@@ -28,7 +28,7 @@ const BlogSingle = () => {
     await axios
       .get(HOME_URL + BLOG_URL + "?slug=" + id?.slug, options)
       .then((res) => {
-        if (res && res.status === 200) {
+        if (res && res?.status === 200) {
 
             setPostData(res?.data?.[0]);
           
@@ -80,8 +80,8 @@ const BlogSingle = () => {
               <img
                 className="radius12 w-100 featureimag"
                 src={
-                  postData?.x_featured_media_original
-                    ? postData?.x_featured_media_original
+                  postData?.fimg_url	
+                    ? postData?.fimg_url	
                     : require("../../assets/img/placeholder.jpg")
                 }
                 alt={postData && postData?.title?.rendered}

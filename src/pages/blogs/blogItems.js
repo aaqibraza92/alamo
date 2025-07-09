@@ -104,13 +104,18 @@ const truncateHTML = (content, limit) => {
   return (
     <>
           {loading && (
-        <div className="d-flex justify-content-center">
-          <div
-            className="spinner-border text-secondary"
-            style={{ width: "3rem", height: "3rem" }}
-            role="status"
-          ></div>
-        </div>
+     <Row className="gy-4">
+      {
+        Array(12).fill().map((_,ind)=>(
+  <Col md={4}>
+    <div className="skeleton" style={{width: '100%', height: "200px"}}>
+
+    </div>
+        </Col>
+        ))
+      }
+      
+     </Row>
       )}
 
       
