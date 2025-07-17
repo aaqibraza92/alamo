@@ -80,7 +80,7 @@ const BlogItems = () => {
     };
 
     await axios.get(`${HOME_URL + BLOG_URL}?per_page=18&page=${currentPage}`, options).then((res) => {
-      if (res && res.status === 200) {
+      if (res && res?.status === 200) {
         setPostData(res?.data);
         setloading(false);
         setTotalPage(res?.headers["x-wp-totalpages"]);
@@ -167,7 +167,7 @@ const BlogItems = () => {
                 </h4>
                 <ul className="catUl pt20 pb20 pl20 pr20 ">
                   {
-                    allCategory.length > 0 && allCategory.map((e, i) => (
+                    allCategory?.length > 0 && allCategory?.map((e, i) => (
                       e.name !== 'Uncategorized' &&
                       <li key={i} className="mb10">
                         <Link className="fs15 colorBlue" to={`/category/${e?.id}`}>{e?.name}</Link>
@@ -186,7 +186,7 @@ const BlogItems = () => {
       </section>
 
       <Row className="gy-4 gx-4 mb60">
-        {postData.length > 0 && postData?.map((e, i) => (
+        {postData?.length > 0 && postData?.map((e, i) => (
           screenWidth > 1024 ? (currentPage === 1 && i !== 0) &&
             <Col lg={4} md={6} xs={12} key={i}>
               <div className="blogWrapper radius12 pb15 transition">
@@ -213,7 +213,7 @@ const BlogItems = () => {
               <div className="blogWrapper radius12 pb15 transition">
                 <div className="featuredImg">
                   <Link to={`/blog/${e?.slug}`}> <img
-                    src={e?.x_featured_media_medium}
+                    src={e?.fimg_url}
                     className="img-fluid w-100"
                     alt=""
                   /></Link>
