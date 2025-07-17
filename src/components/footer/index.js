@@ -13,6 +13,7 @@ import {
   linkdinColor,
   locationSvg,
   twitter,
+  fax,
 } from "../../assets/svg/Svg";
 
 const Footer = () => {
@@ -60,12 +61,28 @@ const Footer = () => {
             <ul className="noUl">
             <li className="mb12">
                 <div className="d-flex">
-                  <span className="mr12">{callSvg}</span>
+                  <span className="mr12">  <img
+                  className="img-fluid mainLogo"
+                  src={require("../../assets/img/faxmachine.png")}
+                  alt="logo"
+                /></span>
+                
                   <a
                     href="tel:210-571-1339"
                     className="colorWhite fs15 fRegular itemLightwhite"
                   >
                     210-571-1339
+                  </a>
+                </div>
+              </li>
+              <li className="mb12">
+                <div className="d-flex">
+                  <span className="mr12">{callSvg}</span>
+                  <a
+                    href="tel:+12105711338"
+                    className="colorWhite fs15 fRegular itemLightwhite"
+                  >
+                  210 571 1338
                   </a>
                 </div>
               </li>

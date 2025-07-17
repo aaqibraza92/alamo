@@ -89,11 +89,11 @@ const Header = () => {
                       </p>
                     </div>
                     <a
-                      href="tel:210-571-1339"
+                      href="tel:+12105711338"
                       className="colorBlack fw600 fs18 mr12"
                     >
                       {" "}
-                      <span className="mr7">{callSvg}</span>210-571-1339
+                      <span className="mr7">{callSvg}</span>+1 210 571 1338
                     </a>
                     <a
                       href="https://www.healowpay.com/HealowPay/jsp/healow/login.jsp"
