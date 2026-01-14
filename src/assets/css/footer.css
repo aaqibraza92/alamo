@@ -62,3 +62,9 @@ footer ul li a:hover{
     color: #fff;
      opacity: 1; 
    }
+
+   .opening {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 11px 15px;
+}

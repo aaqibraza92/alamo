@@ -54,18 +54,26 @@ const Footer = () => {
                 
             </div>
           </Col>
-          <Col lg={3} md={3} xl={3}>
-            <h3 className="colorWhite fs30 fw500  mb40 text-uppercase">
+          <Col lg={4} md={4} xl={4}>
+            <h3 className="colorWhite fs25 fw500  mb20 text-uppercase">
               Get IN TOUCH
             </h3>
             <ul className="noUl">
-            <li className="mb12">
+           
+              <li className="mb10">
                 <div className="d-flex">
-                  <span className="mr12">  <img
-                  className="img-fluid mainLogo"
-                  src={require("../../assets/img/faxmachine.png")}
-                  alt="logo"
-                /></span>
+                  <span className="mr8 fs15 fRegular itemLightwhite">Phone :</span>
+                  <a
+                    href="tel:+12105711338"
+                    className="colorWhite fs15 fRegular itemLightwhite"
+                  >
+                  210-571-1338
+                  </a>
+                </div>
+              </li>
+               <li className="mb10">
+                <div className="d-flex">
+                  <span className="mr8 fs15 fRegular itemLightwhite"> Fax :</span>
                 
                   <a
                     href="tel:210-571-1339"
@@ -75,20 +83,9 @@ const Footer = () => {
                   </a>
                 </div>
               </li>
-              <li className="mb12">
+ <li className="mb10">
                 <div className="d-flex">
-                  <span className="mr12">{callSvg}</span>
-                  <a
-                    href="tel:+12105711338"
-                    className="colorWhite fs15 fRegular itemLightwhite"
-                  >
-                  210 571 1338
-                  </a>
-                </div>
-              </li>
- <li className="mb12">
-                <div className="d-flex">
-                  <span className="mr12">{globleSvg}</span>
+                 <span className="mr8 fs15 fRegular itemLightwhite"> Website :</span>
                   <Link
                     to="https://alamoprimarycare.com/"
                     className="colorWhite fs15 fRegular itemLightwhite"
@@ -97,9 +94,9 @@ const Footer = () => {
                   </Link>
                 </div>
               </li>
-              <li className="mb12">
+              <li className="mb10">
                 <div className="d-flex">
-                  <span className="mr12">{envelopSvg}</span>
+                  <span className="mr8 fs15 fRegular itemLightwhite"> Email :</span>
                   <a
                     href="mailto:admin@alamoprimarycare.com"
                     className="colorWhite fs15 fRegular itemLightwhite"
@@ -112,19 +109,19 @@ const Footer = () => {
             
               <li className="mb0">
                 <div className="d-flex">
-                  <span className="mr12">{locationSvg}</span>
+                  <span className="mr5 fs15 fRegular itemLightwhite"> Address : </span>
                   <a
                     href="https://goo.gl/maps/ByFg1ZhGJvtVedkX7" 
                     className="colorWhite fs15 fRegular itemLightwhite" target="_blank"
                   >
-                  12047 Potranco Rd Ste 105, San Antonio, TX 78253, United States
+                  12047 Potranco Rd Ste 105, <br></br>San Antonio, TX 78253, United States
                   </a>
                 </div>
               </li>
             </ul>
           </Col>
-          <Col lg={3} md={3} xl={3}>
-            <h3 className="colorWhite fs30 fw500  mb40 text-uppercase">
+          <Col lg={2} md={2} xl={2}>
+            <h3 className="colorWhite fs25 fw500  mb20 text-uppercase">
               useful link
             </h3>
             
@@ -174,18 +171,22 @@ const Footer = () => {
           </Col>
 
           <Col lg={3} md={3} xl={3}>
-            <h3 className="colorWhite fs30 fw500 mb40 text-uppercase">
+            <h3 className="colorWhite fs25 fw500 mb20 text-uppercase">
              Locate us
             </h3>
            
 
-            <iframe className="w-100 radius" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.929341217516!2d-98.73212219999999!3d29.4308615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c4341b9ac9cd5%3A0x96849cc9ca8f19a9!2sAlamo%20Primary%20Care!5e0!3m2!1sen!2sin!4v1692448288032!5m2!1sen!2sin" height="230" style={{border:'0'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            
+            <iframe className="w-100 radius" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.929341217516!2d-98.73212219999999!3d29.4308615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c4341b9ac9cd5%3A0x96849cc9ca8f19a9!2sAlamo%20Primary%20Care!5e0!3m2!1sen!2sin!4v1692448288032!5m2!1sen!2sin" height="90" style={{border:'0'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+             <div className="opening">
+                <h5>Our New Location</h5>
+                <p className="fs13 mb-2 fw500">Location : 1411 S Main Street, Boerne, Texas</p>
+                <a  href="tel:+12105711338"  className="colorBlack fw600 fs18 mr12"> <span className="mr7">{callSvg}</span> 210-571-1338</a>
+             </div>
        
           </Col>
         </Row>
 
-        <div className="copyright mt50 pt20 pb20">
+        <div className="copyright  mt0 pt20 pb20">
           <Row className="align-items-center">
             <Col lg={6}>
               <p className="colorWhite fs14 fRegular itemLightwhite mb0 opacity55">

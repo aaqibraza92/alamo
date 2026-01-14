@@ -83,9 +83,13 @@ const Header = () => {
                       <p className="fw600 fs15 colorBlack mb0">
                         Hours Of Operation:
                       </p>
-                      <p className="fw400 fs15  mb0">
-                        Monday to Friday, <br />
-                        8:00 am - 5:00 pm
+                      <p className="fw400 fs14  mb0">
+                        Monday to Thursday, <br />
+                        7:00 am - 7:00 pm
+                      </p>
+                      <p className="fw400 fs14  mb0">
+                        Friday ,
+                        7:00 am - 3:00 pm
                       </p>
                     </div>
                     <a
