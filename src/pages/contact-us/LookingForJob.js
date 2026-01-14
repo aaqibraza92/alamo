@@ -241,14 +241,29 @@ const LookingForJob = () => {
           </Col>
           <Col lg={6} md={6}>
             <div className="mb25">
-              <input
+              <select
+                name="location"
+                style={{ background: "#fff", color: "#777" }}
+                className="inputTheme w-100"
+                value={location}
+                onChange={(e) => setlocation(e.target.value)}
+                id="location"
+              >
+                <option value="">Choose Location</option>
+                <option value="Potranco Rd, San Antonio">
+                  Potranco Rd, San Antonio
+                </option>
+                <option value="Boerne">Boerne</option>
+              </select>
+
+              {/* <input
                 type="text"
                 className="inputTheme w-100"
                 placeholder="Geo location"
                 onChange={(e) => setlocation(e.target.value)}
                 value={location}
                 name="location"
-              />
+              /> */}
               {validations?.location && (
                 <div className="validation">
                   {validations?.location.replace("_", " ")}
@@ -308,9 +323,9 @@ const LookingForJob = () => {
                 placeholderText="Policy holder’s DOB*"
               /> */}
               <small className="phd position-absolute">
-              Policy holder’s DOB*
+                Policy holder’s DOB*
               </small>
-  <input
+              <input
                 type="date"
                 className="inputTheme w-100"
                 placeholder="Policy holder’s DOB*"
