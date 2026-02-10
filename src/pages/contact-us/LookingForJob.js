@@ -13,7 +13,7 @@ const LookingForJob = () => {
   const [lname, setlname] = useState("");
   const [phone, setphone] = useState("");
   const [email, setemail] = useState("");
-  const [location, setlocation] = useState("");
+  const [location, setlocation] = useState("Potranco Rd, San Antonio");
   const [insuranceName, setinsuranceName] = useState("");
   const [holderName, setholderName] = useState("");
   const [dob, setdob] = useState("");
@@ -169,6 +169,9 @@ const LookingForJob = () => {
   return (
     <>
       <ToastContainer />
+      {
+        console.log("aa2",location)
+      }
       <Form onSubmit={onSubmitHandler}>
         <Row>
           <Col lg={4} md={4}>
@@ -240,8 +243,12 @@ const LookingForJob = () => {
             </div>
           </Col>
           <Col lg={6} md={6}>
-            <div className="mb25">
-              <select
+             <label className="d-block mb-2" style={{fontSize: "14px"}} >
+                Choose Location:
+              </label>
+            <div className="d-flex flex-wrap gap-3">
+           
+              {/* <select
                 name="location"
                 style={{ background: "#fff", color: "#777" }}
                 className="inputTheme w-100"
@@ -254,8 +261,31 @@ const LookingForJob = () => {
                   Potranco Rd, San Antonio
                 </option>
                 <option value="Boerne">Boerne</option>
-              </select>
+              </select> */}
+              <label className="d-flex align-items-center">
+                <input
+                style={{height: "auto"}}
+                  type="radio"
+                  name="location"
+                  value="Potranco Rd, San Antonio"
+                  checked={location === "Potranco Rd, San Antonio"}
+                  onChange={(e) => setlocation(e.target.value)}
+                />
+                <span style={{marginLeft: "7px", fontSize: "14px", fontWeight: "500"}}>Potranco Rd, San Antonio</span>
+              </label>
 
+              <label className="d-flex align-items-center">
+                <input
+                style={{height: "auto"}}
+
+                  type="radio"
+                  name="location"
+                  value="Boerne"
+                  checked={location === "Boerne"}
+                  onChange={(e) => setlocation(e.target.value)}
+                />
+               <span style={{marginLeft: "7px", fontSize: "14px", fontWeight: "500"}}>Boerne</span>  
+              </label>
               {/* <input
                 type="text"
                 className="inputTheme w-100"
