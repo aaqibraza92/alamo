@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { CONTACT_FORM } from "../../helpers/apiurls";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 
@@ -169,9 +168,7 @@ const LookingForJob = () => {
   return (
     <>
       <ToastContainer />
-      {
-        console.log("aa2",location)
-      }
+    
       <Form onSubmit={onSubmitHandler}>
         <Row>
           <Col lg={4} md={4}>
