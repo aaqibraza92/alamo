@@ -241,7 +241,7 @@ const LookingForJob = () => {
           </Col>
           <Col lg={6} md={6}>
              <label className="d-block mb-2" style={{fontSize: "14px"}} >
-                Choose Location:
+                Prefered Location :
               </label>
             <div className="d-flex flex-wrap gap-3">
            

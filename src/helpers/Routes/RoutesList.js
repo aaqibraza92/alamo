@@ -31,6 +31,7 @@ import Service from "../../pages/services";
 import Thankyou from "../../pages/thank-you";
 import Blog from "../../pages/blogs";
 import Ivtherapy from "../../pages/iv-therapy";
+import Employment from "../../pages/employment";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -122,11 +123,6 @@ let RouterList = [
     isAdmin: false,
   },
   {
-    element: <GetRoute isprivate={false} role="Default" page={RegulatoryAffairs} />,
-    path: "/regulatory-affairs",
-    isAdmin: false,
-  },
-  {
     element: <GetRoute isprivate={false} role="Default" page={DrugSafetyPV} />,
     path: "/drug-safety-pv",
     isAdmin: false,
@@ -161,6 +157,11 @@ let RouterList = [
   {
     element: <GetRoute isprivate={false} role="Default" page={Service} />,
     path: "/services",
+    isAdmin: false,
+  },
+  {
+    element: <GetRoute isprivate={false} role="Default" page={Employment} />,
+    path: "/careers",
     isAdmin: false,
   },
 

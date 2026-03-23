@@ -85,11 +85,11 @@ const Header = () => {
                       </p>
                       <p className="fw400 fs14  mb0">
                         Monday to Thursday, <br />
-                        7:00 am - 7:00 pm
+                        7:00 am to 5:00 pm
                       </p>
                       <p className="fw400 fs14  mb0">
                         Friday ,
-                        7:00 am - 3:00 pm
+                        7:00 am to 3:00 pm
                       </p>
                     </div>
                     <a
@@ -385,6 +385,12 @@ const Navbar = (props) => {
           </li>
 
           <li>
+            <Link to="/careers" className="colorWhite clickToClose">
+              Careers
+            </Link>
+          </li>
+
+          <li>
             <Link to="/contact-us" className="colorWhite clickToClose">
               Contact Us
             </Link>
@@ -672,7 +678,11 @@ const NavbarMobile = (props) => {
               Blog
             </Link>
           </li>
-
+          <li>
+            <Link to="/careers" className="colorWhite clickToClose">
+            Careers
+            </Link>
+          </li>
           <li>
             <Link to="/contact-us" className="colorWhite clickToClose">
               Contact Us
