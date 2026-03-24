@@ -29,11 +29,14 @@ const EmploymentForm = () => {
     cityState: "",
     phone: "",
     email: "",
+    resume: null
   });
 
   const clearVal=()=>{
     setValidations({...validations,
-      therepy: "",
+      position: "",
+      source: "",
+      resume: null,
       firstName: "",
       address: "",
       cityState: "",
@@ -50,6 +53,8 @@ const EmploymentForm = () => {
     setphone("");
     setemail("");
   };
+
+  console.log("resume",resume)
   const validateAll = () => {
     const validations = {
       therepy: "",
@@ -88,7 +93,11 @@ const EmploymentForm = () => {
       isValid = false;
     }
     if (!position?.value) {
-      validations.therepy = "Position is required";
+      validations.position = "Position is required";
+      isValid = false;
+    }
+     if (!resume) {
+      validations.resume = "Resume is required";
       isValid = false;
     }
 
@@ -126,8 +135,11 @@ const EmploymentForm = () => {
 
     setloading(true);
 
-    axios.post(CONTACT_FORM + 125 + "/feedback", iData, options).then((res) => {
-      if (res && res.status === 200) {
+    axios.post(CONTACT_FORM + 233 + "/feedback", iData, options).then((res) => {
+      if(res?.data?.status==="validation_failed"){
+        notify(res?.data?.message);
+      }
+      else if (res?.data?.status === "mail_sent") {
         clearfeilds();
         notify(res?.data?.message);
         setloading(false);
@@ -137,9 +149,36 @@ const EmploymentForm = () => {
     });
   };
 
-  const resumeHandle=(val)=>{
-    console.log(val)
+const resumeHandle = (e) => {
+  const file = e.target.files[0];
+
+  if (!file) return;
+
+  const allowedTypes = [
+    "application/pdf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // docx
+    "image/jpeg",
+    "image/png",
+    "image/jpg",
+    "image/webp",
+  ];
+
+  const maxSize = 5 * 1024 * 1024;
+
+  if (!allowedTypes.includes(file.type)) {
+    alert("Only PDF, DOC, DOCX, JPG, PNG files are allowed");
+    return;
   }
+
+  if (file.size > maxSize) {
+    alert("File size should be less than 5MB");
+    return;
+  }
+
+  setResume(file);
+
+};
 
   return (
     <>
