@@ -54,7 +54,6 @@ const EmploymentForm = () => {
     setemail("");
   };
 
-  console.log("resume",resume)
   const validateAll = () => {
     const validations = {
       therepy: "",
