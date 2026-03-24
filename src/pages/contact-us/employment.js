@@ -10,17 +10,20 @@ import { useNavigate } from "react-router-dom";
 const EmploymentForm = () => {
   const navigate = useNavigate();
   const [loading, setloading] = useState(false);
-  const [therepy, settherepy] = useState("");
+  const [position, setPosition] = useState("");
+  const [source, setSource] = useState("");
   const [firstName, setfirstName] = useState("");
   const [address, setaddress] = useState("");
   const [cityState, setcityState] = useState("");
+  const [zipCode, setzipCode] = useState("");
   const [phone, setphone] = useState("");
   const [email, setemail] = useState("");
-  const [mesage, setmesage] = useState("");
+  const [resume, setResume] = useState(null);
   const notify = (v) => toast(v);
 
   const [validations, setValidations] = React.useState({
-    therepy: "",
+    position: "",
+    source: "",
     firstName: "",
     address: "",
     cityState: "",
@@ -39,13 +42,13 @@ const EmploymentForm = () => {
     })
   }
   const clearfeilds = () => {
-    settherepy("");
+    setSource("");
+    setPosition("");
     setfirstName("");
     setaddress("");
     setcityState("");
     setphone("");
     setemail("");
-    setmesage("");
   };
   const validateAll = () => {
     const validations = {
@@ -84,8 +87,8 @@ const EmploymentForm = () => {
       validations.cityState = "City/State is required";
       isValid = false;
     }
-    if (!therepy?.value) {
-      validations.therepy = "IV Therepy is required";
+    if (!position?.value) {
+      validations.therepy = "Position is required";
       isValid = false;
     }
 
@@ -104,14 +107,15 @@ const EmploymentForm = () => {
     }
 
     const iData = new FormData();
-    iData.append("informationplaceholder", mesage);
-    // iData.append("Title", title);
     iData.append("First_Name", firstName);
     iData.append("House_Name", address);
     iData.append("citystate", cityState);
+    iData.append("Zipcode", zipCode);
     iData.append("phone", phone);
     iData.append("your-email", email);
-    iData.append("menu-684", therepy?.value);
+    iData.append("position", position?.value);
+    iData.append("source", source?.value);
+    iData.append("resume", resume);
 
     const options = {
       method: "POST",
@@ -132,6 +136,10 @@ const EmploymentForm = () => {
       }
     });
   };
+
+  const resumeHandle=(val)=>{
+    console.log(val)
+  }
 
   return (
     <>
@@ -230,9 +238,9 @@ const EmploymentForm = () => {
               type="text"
               className="inputTheme w-100"
               placeholder="Zip Code *"
-              onChange={(e) => setcityState(e.target.value)}
-              value={cityState}
-              name="cityState"
+              onChange={(e) => setzipCode(e.target.value)}
+              value={zipCode}
+              name="zipCode"
             />
                    {validations?.cityState && (
               <div className="validation">
@@ -260,17 +268,18 @@ const EmploymentForm = () => {
                 },
              
               ]}
-              value={therepy}
+              value={position}
               placeholder={<div>Position *</div>}
-              onChange={(e) => settherepy(e)}
+              onChange={(e) => setPosition(e)}
               name="therepy"
             />
                      {validations?.therepy && (
               <div className="validation">
-                {validations?.therepy.replace("_", " ")}
+                {validations?.position.replace("_", " ")}
               </div>
             )}
           </div>
+       
         </Col>
 
          <Col lg={6} md={4}>
@@ -299,14 +308,14 @@ const EmploymentForm = () => {
                 },
              
               ]}
-              value={therepy}
+              value={source}
               placeholder={<div>How did you hear about us?</div>}
-              onChange={(e) => settherepy(e)}
-              name="therepy"
+              onChange={(e) => setSource(e)}
+              name="source"
             />
                      {validations?.therepy && (
               <div className="validation">
-                {validations?.therepy.replace("_", " ")}
+                {validations?.source.replace("_", " ")}
               </div>
             )}
           </div>
@@ -329,12 +338,12 @@ const EmploymentForm = () => {
                           </label>
                           <input
                             id="fileUpload"
-                            name="lname"
+                            name="resume"
                             className="d-none"
                             type="file"
-                            // onChange={(e)=>uploadHandle(e)
+                            onChange={(e)=>resumeHandle(e)
                               
-                            // }
+                            }
                           />
                         </Col>
                       </Row>
